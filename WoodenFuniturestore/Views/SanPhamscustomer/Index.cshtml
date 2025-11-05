@@ -1,0 +1,62 @@
+﻿@model IEnumerable<WoodenFuniturestore.Models.SanPhamsViewModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+<div class="container px-4 px-lg-5 mt-5">
+    <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+        @foreach (var item in Model)
+        {
+            <div class="col mb-5">
+                <div class="card h-100">
+                    <!-- Sale badge-->
+                    @if(item.CoKhuyenMai){
+                        <div class="badge bg-danger text-white position-absolute"
+                             style="top: 0.5rem; right: 0.5rem">
+                            Giảm giá
+                        </div>
+                    }
+                    <!-- Product image-->
+                    <img class="card-img-top" src="images/products/@Html.DisplayFor(modelItem => item.HinhAnh)"
+                         alt="..." />
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <h5 class="text-info">@Html.DisplayFor(modelItem => item.TenSanPham)</h5>
+                            <!-- Product reviews-->
+                            <div class="d-flex justify-content-center small text-warning mb-2">
+                                @for (int i = 1; i <= 5; i++)
+                                {
+                                    if (i <= Math.Round(item.Rating))
+                                    {
+                                        <i class="bi bi-star-fill"></i>
+                                    }
+                                    else
+                                    {
+                                        <i class="bi bi-star"></i>
+                                    }
+                                }
+                            </div>
+                            <!-- Product price-->
+                            @if(item.CoKhuyenMai){
+                                <span class="text-muted text-decoration-line-through">@Html.DisplayFor(modelItem => item.GiaGoc)đ</span>
+                                <span style="color: red; font-weight: bold;">@Html.DisplayFor(modelItem => item.GiaBan)đ</span>
+                            }
+                            else
+                            {
+                                <span style="color: black; font-weight: bold;">@Html.DisplayFor(modelItem => item.GiaBan)đ</span>
+                            }
+                        </div>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center">
+                            <a class="btn btn-outline-info mt-auto" href="#">Chọn mua</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
