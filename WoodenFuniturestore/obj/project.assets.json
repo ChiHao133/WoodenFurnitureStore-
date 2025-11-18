@@ -7602,11 +7602,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Lập trình web ASP\\WoodenFuniturestore\\WoodenFuniturestore\\WoodenFuniturestore.csproj",
+      "projectUniqueName": "E:\\Lập trình web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\WoodenFuniturestore.csproj",
       "projectName": "WoodenFuniturestore",
-      "projectPath": "E:\\Lập trình web ASP\\WoodenFuniturestore\\WoodenFuniturestore\\WoodenFuniturestore.csproj",
+      "projectPath": "E:\\Lập trình web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\WoodenFuniturestore.csproj",
       "packagesPath": "C:\\Users\\Chi Hao\\.nuget\\packages\\",
-      "outputPath": "E:\\Lập trình web ASP\\WoodenFuniturestore\\WoodenFuniturestore\\obj\\",
+      "outputPath": "E:\\Lập trình web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\DevExpress 24.2\\Components\\Offline Packages",

@@ -77,8 +77,6 @@ public partial class ApplicationDbContext : DbContext
         modelBuilder.Entity<DanhMuc>(entity =>
         {
             entity.HasKey(e => e.DanhMucId).HasName("PK__DanhMuc__1C53BA7BF606BE3A");
-
-            entity.HasOne(d => d.DanhMucCha).WithMany(p => p.InverseDanhMucCha).HasConstraintName("FK__DanhMuc__DanhMuc__6477ECF3");
         });
 
         modelBuilder.Entity<DonHang>(entity =>

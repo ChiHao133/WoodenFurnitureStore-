@@ -18,9 +18,6 @@
             <th>
                 @Html.DisplayNameFor(model => model.MoTa)
             </th>
-            <th>
-                @Html.DisplayNameFor(model => model.DanhMucCha)
-            </th>
             <th></th>
         </tr>
     </thead>
@@ -32,9 +29,6 @@
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.MoTa)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.DanhMucCha.DanhMucId)
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.DanhMucId">Edit</a> |

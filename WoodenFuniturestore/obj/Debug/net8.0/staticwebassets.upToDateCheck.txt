@@ -1,5 +1,24 @@
 wwwroot\css\site.css
 wwwroot\favicon.ico
+wwwroot\images\banghe1.jpg
+wwwroot\images\banghe2.jpg
+wwwroot\images\banghe3.jpg
+wwwroot\images\carousel\1.jpg
+wwwroot\images\carousel\2.jpg
+wwwroot\images\carousel\3.jpg
+wwwroot\images\carousel\6 (1).jpg
+wwwroot\images\carousel\6 (2).jpg
+wwwroot\images\carousel\6 (3).jpg
+wwwroot\images\kesach1.jpg
+wwwroot\images\kesach2.jpg
+wwwroot\images\kesach3.jpg
+wwwroot\images\logo.png
+wwwroot\images\sofa1.jpg
+wwwroot\images\sofa2.jpg
+wwwroot\images\sofa3.jpg
+wwwroot\images\tubep2.jpg
+wwwroot\images\tubep3.jpg
+wwwroot\images\tukegiay.jpg
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map

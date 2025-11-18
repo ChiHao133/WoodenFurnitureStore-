@@ -20,3 +20,69 @@ html {
 body {
   margin-bottom: 60px;
 }
+.navbar-brand img {
+    height: 100px; 
+}
+
+@media (max-width: 991.98px) {
+    .navbar-brand-mobile {
+        flex-grow: 1;
+        text-align: center;
+        margin-right: 0;
+    }
+
+        .navbar-brand-mobile img {
+            height: 40px;
+        }
+    .mobile-search-form {
+        width: 100%;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+}
+/* 1. Wrapper ch?a hình ?nh và l?p ph? */
+.product-image-wrapper {
+    position: relative; /* Quan tr?ng: Làm "cha" cho l?p ph? */
+    overflow: hidden; /* ??m b?o l?p ph? không tràn ra ngoài */
+}
+
+/* 2. L?p ph? (overlay) */
+.product-overlay {
+    /* ??nh v? tuy?t ??i ?? n?m ?è lên hình ?nh */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Màu ?en trong su?t (thay ??i 0.6 ?? t?ng/gi?m ?? m?) */
+    background-color: rgba(0, 0, 0, 0.6);
+    /* ?n l?p ph? ?i ban ??u */
+    opacity: 0;
+    /* Hi?u ?ng m? d?n (fade) trong 0.3 giây */
+    transition: opacity 0.3s ease;
+    /* C?n gi?a n?i dung bên trong (icon và ch?) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* X?p icon và ch? theo chi?u d?c */
+
+    color: white; /* Màu ch? và icon */
+    cursor: pointer; /* Bi?u t??ng con tr? chu?t */
+}
+
+/* 3. Hi?n th? l?p ph? khi di chu?t vào wrapper */
+.product-image-wrapper:hover .product-overlay {
+    opacity: 1; /* Hi?n ra */
+}
+
+/* 4. Tùy ch?nh ki?u cho icon và ch? (tùy ch?n) */
+.overlay-content i {
+    font-size: 2.5rem; /* Kích th??c icon */
+    margin-bottom: 0.5rem;
+}
+
+.overlay-content span {
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase; /* Vi?t hoa */
+}
