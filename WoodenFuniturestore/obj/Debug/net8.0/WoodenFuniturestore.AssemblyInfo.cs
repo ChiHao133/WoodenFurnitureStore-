@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WoodenFuniturestore")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+874a49863ace99d72ca54d8f20fa0334a5f11c94")]
 [assembly: System.Reflection.AssemblyProductAttribute("WoodenFuniturestore")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WoodenFuniturestore")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

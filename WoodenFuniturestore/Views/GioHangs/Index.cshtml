@@ -1,0 +1,134 @@
+﻿@model IEnumerable<WoodenFuniturestore.Models.ChiTietGioHang>
+@{
+    ViewData["Title"] = "Giỏ hàng của bạn";
+    // Tính toán tổng tiền
+    decimal tongTien = Model.Sum(item => item.SoLuong * item.GiaBan) ?? 0;
+}
+
+<div class="container mt-4">
+    <h2>@ViewData["Title"]</h2>
+    @if (TempData["CartSuccess"] != null)
+    {
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            @TempData["CartSuccess"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+
+    @if (TempData["CartError"] != null)
+    {
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            @TempData["CartError"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+    @if (Model == null || !Model.Any())
+    {
+        <div class="alert alert-info text-center" role="alert">
+            Giỏ hàng của bạn đang trống.
+            <a asp-controller="Home" asp-action="Index" class="alert-link">Tiếp tục mua sắm</a>.
+        </div>
+    }
+    else
+    {
+        <div class="row">
+            <div class="col-lg-8">
+                <table class="table align-middle">
+                    <thead>
+                        <tr>
+                            <th scope="col" colspan="2">Sản phẩm</th>
+                            <th scope="col">Đơn giá</th>
+                            <th scope="col">Số lượng</th>
+                            <th scope="col">Tạm tính</th>
+                            <th scope="col"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td style="width: 100px;">
+                                    @if (!string.IsNullOrEmpty(item.MaSanPhamNavigation.HinhAnh))
+                                    {
+                                        <img src="~/images/Product/@item.MaSanPhamNavigation.HinhAnh" class="img-fluid rounded" alt="@item.MaSanPhamNavigation.TenSanPham" style="width: 80px; height: 80px; object-fit: cover;">
+                                    }
+                                    else
+                                    {
+                                        <img src="~/images/placeholder.png" class="img-fluid rounded" style="width: 80px; height: 80px; object-fit: cover;">
+                                    }
+                                </td>
+
+                                <td>
+                                    <a asp-controller="SanPhamscustomer" asp-action="Details" asp-route-id="@item.MaSanPham" class="text-dark text-decoration-none">
+                                        @item.MaSanPhamNavigation.TenSanPham
+                                    </a>
+                                </td>
+                                @{
+                                    var gia = item.GiaBan??0;
+                                }
+                                <td>@gia.ToString("N0") đ</td>
+
+                                <td style="width: 150px;">
+                                    <form asp-controller="GioHangs" asp-action="UpdateCart" method="post">
+                                        <input type="hidden" name="maChiTiet" value="@item.MaChiTiet" />
+                                        <div class="input-group">
+                                            <input type="number" name="soLuong" class="form-control form-control-sm" value="@item.SoLuong" min="1">
+                                            <button type="submit" class="btn btn-outline-secondary btn-sm">Cập nhật</button>
+                                        </div>
+                                    </form>
+                                </td>
+                                @{
+                                    var tongtien1 = item.GiaBan * item.SoLuong ?? 0;
+                                }
+                                <td>@(tongtien1.ToString("N0")) đ</td>
+
+                                <td>
+                                    <form asp-controller="GioHangs" asp-action="RemoveFromCart" method="post">
+                                        <input type="hidden" name="maChiTiet" value="@item.MaChiTiet" />
+                                        <button type="submit" class="btn btn-outline-danger btn-sm" onclick="return confirm('Bạn có chắc chắn muốn xóa sản phẩm này khỏi giỏ hàng?');">
+                                            <i class="bi bi-trash"></i>
+                                        </button>
+                                    </form>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Tổng cộng giỏ hàng</h5>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Tạm tính
+                                <span>@tongTien.ToString("N0") đ</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Phí vận chuyển
+                                <span>(Tính khi thanh toán)</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center fw-bold">
+                                Tổng tiền
+                                <span class="fs-5 text-danger">@tongTien.ToString("N0") đ</span>
+                            </li>
+                        </ul>
+
+                        <a asp-controller="ThanhToan" asp-action="Index" class="btn btn-primary w-100 mt-3">
+                            Tiến hành thanh toán
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+@section Scripts {
+    <style>
+        .table .input-group {
+            width: 130px; 
+        }
+    </style>
+}

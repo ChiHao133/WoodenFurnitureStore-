@@ -22,7 +22,7 @@ namespace WoodenFuniturestore.Controllers
         // GET: DanhMucs
         public async Task<IActionResult> Index()
         {
-            var applicationDbContext = _context.DanhMucs.Include(d => d.DanhMucCha);
+            var applicationDbContext = _context.DanhMucs;
             return View(await applicationDbContext.ToListAsync());
         }
 
@@ -35,7 +35,6 @@ namespace WoodenFuniturestore.Controllers
             }
 
             var danhMuc = await _context.DanhMucs
-                .Include(d => d.DanhMucCha)
                 .FirstOrDefaultAsync(m => m.DanhMucId == id);
             if (danhMuc == null)
             {
@@ -65,7 +64,7 @@ namespace WoodenFuniturestore.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["DanhMucChaId"] = new SelectList(_context.DanhMucs, "DanhMucId", "DanhMucId", danhMuc.DanhMucChaId);
+            ViewData["DanhMucChaId"] = new SelectList(_context.DanhMucs, "DanhMucId", "DanhMucId");
             return View(danhMuc);
         }
 
@@ -82,7 +81,7 @@ namespace WoodenFuniturestore.Controllers
             {
                 return NotFound();
             }
-            ViewData["DanhMucChaId"] = new SelectList(_context.DanhMucs, "DanhMucId", "DanhMucId", danhMuc.DanhMucChaId);
+            ViewData["DanhMucChaId"] = new SelectList(_context.DanhMucs, "DanhMucId", "DanhMucId");
             return View(danhMuc);
         }
 
@@ -118,7 +117,7 @@ namespace WoodenFuniturestore.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["DanhMucChaId"] = new SelectList(_context.DanhMucs, "DanhMucId", "DanhMucId", danhMuc.DanhMucChaId);
+            ViewData["DanhMucChaId"] = new SelectList(_context.DanhMucs, "DanhMucId", "DanhMucId");
             return View(danhMuc);
         }
 
@@ -131,7 +130,6 @@ namespace WoodenFuniturestore.Controllers
             }
 
             var danhMuc = await _context.DanhMucs
-                .Include(d => d.DanhMucCha)
                 .FirstOrDefaultAsync(m => m.DanhMucId == id);
             if (danhMuc == null)
             {

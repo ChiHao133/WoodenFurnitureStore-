@@ -45,6 +45,9 @@ public partial class NguoiDung
     [InverseProperty("User")]
     public virtual ICollection<DonHang> DonHangs { get; set; } = new List<DonHang>();
 
+    [InverseProperty("MaNguoiDungNavigation")]
+    public virtual ICollection<GioHang> GioHangs { get; set; } = new List<GioHang>();
+
     [ForeignKey("VaiTroId")]
     [InverseProperty("NguoiDungs")]
     public virtual VaiTro VaiTro { get; set; } = null!;

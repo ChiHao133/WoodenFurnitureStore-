@@ -1,0 +1,18 @@
+﻿@model IEnumerable<WoodenFuniturestore.Models.DanhMuc> // Model bạn truyền vào
+
+@foreach (var item in Model)
+{
+    <li>
+        <a class="dropdown-item"
+           asp-controller="SanPhamscustomer"
+           asp-action="Index"
+           asp-route-categoryId="@item.DanhMucId">@item.TenDanhMuc</a>
+    </li>
+}
+
+<li><hr class="dropdown-divider"></li>
+<li>
+    <a class="dropdown-item" asp-controller="SanPhamscustomer" asp-action="Index">
+        Xem tất cả sản phẩm
+    </a>
+</li>

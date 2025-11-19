@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Lập trình web ASP\\WoodenFuniturestore\\WoodenFuniturestore\\WoodenFuniturestore.csproj": {}
+    "E:\\Lập trình web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\WoodenFuniturestore.csproj": {}
   },
   "projects": {
-    "E:\\Lập trình web ASP\\WoodenFuniturestore\\WoodenFuniturestore\\WoodenFuniturestore.csproj": {
+    "E:\\Lập trình web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\WoodenFuniturestore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Lập trình web ASP\\WoodenFuniturestore\\WoodenFuniturestore\\WoodenFuniturestore.csproj",
+        "projectUniqueName": "E:\\Lập trình web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\WoodenFuniturestore.csproj",
         "projectName": "WoodenFuniturestore",
-        "projectPath": "E:\\Lập trình web ASP\\WoodenFuniturestore\\WoodenFuniturestore\\WoodenFuniturestore.csproj",
+        "projectPath": "E:\\Lập trình web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\WoodenFuniturestore.csproj",
         "packagesPath": "C:\\Users\\Chi Hao\\.nuget\\packages\\",
-        "outputPath": "E:\\Lập trình web ASP\\WoodenFuniturestore\\WoodenFuniturestore\\obj\\",
+        "outputPath": "E:\\Lập trình web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\DevExpress 24.2\\Components\\Offline Packages",
@@ -54,6 +54,18 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.0.3, )"
+            },
+            "Microsoft.AspNetCore.Authentication.Cookies": {
+              "target": "Package",
+              "version": "[2.3.0, )"
+            },
+            "Microsoft.AspNetCore.Session": {
+              "target": "Package",
+              "version": "[2.3.0, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[8.0.11, )"
@@ -64,9 +76,17 @@
               "target": "Package",
               "version": "[8.0.11, )"
             },
+            "Microsoft.Extensions.Caching.Memory": {
+              "target": "Package",
+              "version": "[9.0.10, )"
+            },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[8.0.7, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
             }
           },
           "imports": [

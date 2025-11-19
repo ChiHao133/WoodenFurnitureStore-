@@ -3,60 +3,95 @@
 @{
     ViewData["Title"] = "Index";
 }
-<div class="container px-4 px-lg-5 mt-5">
-    <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
-        @foreach (var item in Model)
-        {
-            <div class="col mb-5">
+<form asp-controller="SanPhamscustomer" asp-action="Index" method="get" class="row g-3 mb-5 mt-4">
+    <div class="col-md-2">
+        <strong>BỘ LỌC</strong>
+    </div>
+
+    <div class="col-md-2">
+        <select name="categoryId" class="form-select" asp-items="ViewBag.DanhMuc">
+            <option value="">Tất cả Danh mục</option>
+        </select>
+    </div>
+    <div class="col-md-2">
+        <select name="chatLieuId" class="form-select" asp-items="ViewBag.ChatLieus">
+            <option value="">Tất cả Chất liệu</option>
+        </select>
+    </div>
+
+    <div class="col-md-2">
+        <input type="number" name="minPrice" class="form-control" placeholder="Giá từ" />
+    </div>
+
+    <div class="col-md-2">
+        <input type="number" name="maxPrice" class="form-control" placeholder="Giá đến" />
+    </div>
+
+    <div class="col-md-2">
+        <button type="submit" class="btn btn-outline-dark w-100">Lọc</button>
+    </div>
+</form>
+<div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center mb-5">
+    @foreach (var item in Model
+    .OrderBy(x => (x.GiaBan - x.GiaGoc) / x.GiaGoc))
+    {
+        <div class="col mb-5">
+
+            <a style="text-decoration: none" asp-area="" asp-controller="SanPhamscustomer" asp-action="Details" asp-route-id=@item.Id>
                 <div class="card h-100">
                     <!-- Sale badge-->
-                    @if(item.CoKhuyenMai){
-                        <div class="badge bg-danger text-white position-absolute"
-                             style="top: 0.5rem; right: 0.5rem">
-                            Giảm giá
-                        </div>
+                    @{
+                        var giaban = item.GiaBan.ToString("N0");
+                       
+                        var giagoc = item.GiaGoc.ToString("N0");
                     }
-                    <!-- Product image-->
-                    <img class="card-img-top" src="images/products/@Html.DisplayFor(modelItem => item.HinhAnh)"
-                         alt="..." />
-                    <!-- Product details-->
-                    <div class="card-body p-4">
-                        <div class="text-center">
-                            <!-- Product name-->
-                            <h5 class="text-info">@Html.DisplayFor(modelItem => item.TenSanPham)</h5>
-                            <!-- Product reviews-->
-                            <div class="d-flex justify-content-center small text-warning mb-2">
-                                @for (int i = 1; i <= 5; i++)
-                                {
-                                    if (i <= Math.Round(item.Rating))
+                @if ((item.GiaGoc-item.GiaBan)>0)
+                {
+                    <div class="badge bg-danger text-white position-absolute"
+                         style="top: 0.5rem; right: 0.5rem">
+                        -@item.PhanTramGiam %
+                    </div>
+                }
+                <!-- Product image-->
+             
+                    <div class="product-image-wrapper">
+                        <img class="card-img-top" src="~/images/Product/@Html.DisplayFor(models=>item.HinhAnh)" alt="..." />
+                            <div class="product-overlay card-img-top">
+                                <div class="overlay-content">
+                                <span>Xem chi tiết</span>
+                                </div>
+                            </div>
+                    </div>
+                <!-- Product details-->
+                <div class="card-body p-4">
+                    <div class="text-align-left">
+                        <h6 style="color: black" class="">@item.TenSanPham</h6>
+                        <span style="color: red;">@giaban đ</span>
+                        <span class="text-muted text-decoration-line-through">@giagoc đ</span>
+                        <div class="d-flex justify-content-start small text-warning mb-2">
+                            @for (int i = 0; i < 5; i++)
+                            {
+                                    if (i+1 <= item.Rating)
                                     {
-                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi-star-fill" style="color: black"></i>
+                                    }
+                                    else if (i+1 - item.Rating < 1)
+                                    {
+                                        <i class="bi-star-half" style="color: black"></i>
                                     }
                                     else
                                     {
-                                        <i class="bi bi-star"></i>
+                                        <i class="bi-star" style="color: black"></i>
                                     }
-                                }
-                            </div>
-                            <!-- Product price-->
-                            @if(item.CoKhuyenMai){
-                                <span class="text-muted text-decoration-line-through">@Html.DisplayFor(modelItem => item.GiaGoc)đ</span>
-                                <span style="color: red; font-weight: bold;">@Html.DisplayFor(modelItem => item.GiaBan)đ</span>
-                            }
-                            else
-                            {
-                                <span style="color: black; font-weight: bold;">@Html.DisplayFor(modelItem => item.GiaBan)đ</span>
                             }
                         </div>
-                    </div>
-                    <!-- Product actions-->
-                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                        <div class="text-center">
-                            <a class="btn btn-outline-info mt-auto" href="#">Chọn mua</a>
-                        </div>
+
                     </div>
                 </div>
+
             </div>
-        }
-    </div>
+            </a>
+        </div>
+    }
 </div>
+<div class=""></div>

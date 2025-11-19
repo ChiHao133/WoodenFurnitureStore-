@@ -20,11 +20,15 @@ public partial class ApplicationDbContext : DbContext
 
     public virtual DbSet<ChiTietDonHang> ChiTietDonHangs { get; set; }
 
+    public virtual DbSet<ChiTietGioHang> ChiTietGioHangs { get; set; }
+
     public virtual DbSet<DanhGium> DanhGia { get; set; }
 
     public virtual DbSet<DanhMuc> DanhMucs { get; set; }
 
     public virtual DbSet<DonHang> DonHangs { get; set; }
+
+    public virtual DbSet<GioHang> GioHangs { get; set; }
 
     public virtual DbSet<KhuyenMai> KhuyenMais { get; set; }
 
@@ -58,6 +62,15 @@ public partial class ApplicationDbContext : DbContext
                 .HasConstraintName("FK__ChiTietDo__SanPh__797309D9");
         });
 
+        modelBuilder.Entity<ChiTietGioHang>(entity =>
+        {
+            entity.HasKey(e => e.MaChiTiet).HasName("PK__ChiTietG__CDF0A1145F4972F1");
+
+            entity.HasOne(d => d.MaGioHangNavigation).WithMany(p => p.ChiTietGioHangs).HasConstraintName("FK__ChiTietGi__MaGio__2BFE89A6");
+
+            entity.HasOne(d => d.MaSanPhamNavigation).WithMany(p => p.ChiTietGioHangs).HasConstraintName("FK__ChiTietGi__MaSan__2DE6D218");
+        });
+
         modelBuilder.Entity<DanhGium>(entity =>
         {
             entity.HasKey(e => e.DanhGiaId).HasName("PK__DanhGia__52C0CA257979BFB2");
@@ -77,8 +90,6 @@ public partial class ApplicationDbContext : DbContext
         modelBuilder.Entity<DanhMuc>(entity =>
         {
             entity.HasKey(e => e.DanhMucId).HasName("PK__DanhMuc__1C53BA7BF606BE3A");
-
-            entity.HasOne(d => d.DanhMucCha).WithMany(p => p.InverseDanhMucCha).HasConstraintName("FK__DanhMuc__DanhMuc__6477ECF3");
         });
 
         modelBuilder.Entity<DonHang>(entity =>
@@ -88,6 +99,15 @@ public partial class ApplicationDbContext : DbContext
             entity.Property(e => e.NgayDatHang).HasDefaultValueSql("(getdate())");
 
             entity.HasOne(d => d.User).WithMany(p => p.DonHangs).HasConstraintName("FK__DonHang__UserID__75A278F5");
+        });
+
+        modelBuilder.Entity<GioHang>(entity =>
+        {
+            entity.HasKey(e => e.MaGioHang).HasName("PK__GioHang__F5001DA3C706C335");
+
+            entity.Property(e => e.NgayTao).HasDefaultValueSql("(getdate())");
+
+            entity.HasOne(d => d.MaNguoiDungNavigation).WithMany(p => p.GioHangs).HasConstraintName("FK__GioHang__MaNguoi__2CF2ADDF");
         });
 
         modelBuilder.Entity<KhuyenMai>(entity =>
