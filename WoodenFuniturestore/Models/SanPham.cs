@@ -54,6 +54,9 @@ public partial class SanPham
     [InverseProperty("SanPham")]
     public virtual ICollection<ChiTietDonHang> ChiTietDonHangs { get; set; } = new List<ChiTietDonHang>();
 
+    [InverseProperty("MaSanPhamNavigation")]
+    public virtual ICollection<ChiTietGioHang> ChiTietGioHangs { get; set; } = new List<ChiTietGioHang>();
+
     [InverseProperty("SanPham")]
     public virtual ICollection<DanhGium> DanhGia { get; set; } = new List<DanhGium>();
 

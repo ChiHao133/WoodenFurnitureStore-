@@ -1,8 +1,95 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿@model IEnumerable<WoodenFuniturestore.Models.SanPhamsViewModel>
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+@{
+    ViewData["Title"] = "Index";
+}
+<div id="carouselExampleDark" class="carousel carousel-dark slide">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+            <img src="~/images/carousel/6 (1).jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+            <img src="~/images/carousel/6 (2).jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="~/images/carousel/6 (3).jpg" class="d-block w-100" alt="...">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+<div class="container px-4 px-lg-5 mt-5">
+    <div>
+        <h4>Sản phẩm giá tốt</h4>
+    </div>
+    <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+        @foreach (var item in Model
+        .OrderBy(x => (x.GiaBan - x.GiaGoc)/ x.GiaGoc)
+        .Take(4))
+        {
+            <div class="col mb-5">
+                <a style="text-decoration: none" asp-controller="SanPhamscustomer" asp-action="Details" asp-route-id=@item.Id>
+                <div class="card h-100">
+                    <!-- Sale badge-->
+                    @{
+                        var phanTramGiam = (int)Math.Round((item.GiaGoc - item.GiaBan) / item.GiaGoc * 100);
+                    }
+                    @if (phanTramGiam > 0)
+                    {
+                        <div class="badge bg-danger text-white position-absolute"
+                             style="top: 0.5rem; right: 0.5rem">
+                            -@phanTramGiam%
+                        </div>
+                    }
+                    <!-- Product image-->
+                    <div class="card h-100">
+                        <div class="product-image-wrapper">
+                            <img class="card-img-top" src="~/images/banghe1.jpg" alt="..." />
+
+                            <div class="product-overlay card-img-top">
+                                <div class="overlay-content">
+                                    <span>Xem chi tiết</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-align-left">
+                            <h6 style="color: black">@Html.DisplayFor(models => item.TenSanPham)</h6>
+                            <span style="color: red;">@Html.DisplayFor(modelItem => item.GiaBan)đ</span>
+                            <span class="text-muted text-decoration-line-through">@Html.DisplayFor(modelItem => item.GiaGoc)đ</span>
+                            <div class="d-flex justify-content-start small text-warning mb-2">
+                                @for (int i = 0; i < 5; i++)
+                                {
+                                    if (i + 1 <= item.Rating)
+                                    {
+                                        <div class="bi-star-fill"></div>
+                                    }
+                                    else
+                                    {
+                                        <div class="bi-star"></div>
+                                    }
+                                }
+                            </div>
+
+                        </div>
+                    </div>
+                   
+                </div>
+                </a>
+            </div>
+        }
+    </div>
 </div>

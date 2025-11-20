@@ -20,3 +20,175 @@ html {
 body {
   margin-bottom: 60px;
 }
+.navbar-brand img {
+    height: 100px; 
+}
+
+@media (max-width: 991.98px) {
+    .navbar-brand-mobile {
+        flex-grow: 1;
+        text-align: center;
+        margin-right: 0;
+    }
+
+        .navbar-brand-mobile img {
+            height: 40px;
+        }
+    .mobile-search-form {
+        width: 100%;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+}
+/* 1. Wrapper ch?a hình ?nh và l?p ph? */
+.product-image-wrapper {
+    position: relative; /* Quan tr?ng: Làm "cha" cho l?p ph? */
+    overflow: hidden; /* ??m b?o l?p ph? không tràn ra ngoài */
+}
+
+/* 2. L?p ph? (overlay) */
+.product-overlay {
+    /* ??nh v? tuy?t ??i ?? n?m ?è lên hình ?nh */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Màu ?en trong su?t (thay ??i 0.6 ?? t?ng/gi?m ?? m?) */
+    background-color: rgba(0, 0, 0, 0.6);
+    /* ?n l?p ph? ?i ban ??u */
+    opacity: 0;
+    /* Hi?u ?ng m? d?n (fade) trong 0.3 giây */
+    transition: opacity 0.3s ease;
+    /* C?n gi?a n?i dung bên trong (icon và ch?) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* X?p icon và ch? theo chi?u d?c */
+
+    color: white; /* Màu ch? và icon */
+    cursor: pointer; /* Bi?u t??ng con tr? chu?t */
+}
+
+/* 3. Hi?n th? l?p ph? khi di chu?t vào wrapper */
+.product-image-wrapper:hover .product-overlay {
+    opacity: 1; /* Hi?n ra */
+}
+
+/* 4. Tùy ch?nh ki?u cho icon và ch? (tùy ch?n) */
+.overlay-content i {
+    font-size: 2.5rem; /* Kích th??c icon */
+    margin-bottom: 0.5rem;
+}
+
+.overlay-content span {
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase; /* Vi?t hoa */
+}
+
+---
+
+### 2. Mã CSS Tùy Ch?nh (B?t bu?c)
+
+Ph?n CSS này v?n gi? nguyên nh? ví d? tr??c. B?n c?n l?u nó vào file (ví d?: `wwwroot/css/product-detail.css`) và link nó trong file `_Layout.cshtml` ho?c ? ??u file này.
+
+```css
+/* --- CÀI ??T CHUNG --- */
+.product-details { /* Tên class cho c?t bên ph?i */
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* --- Breadcrumb (???ng d?n) --- */
+.breadcrumb {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+}
+
+.breadcrumb-item a {
+    text-decoration: none;
+    color: #888;
+}
+
+.breadcrumb-item.active {
+    color: #333;
+    font-weight: 500;
+}
+
+/* --- C?T ?NH THU NH? --- */
+.product-thumbnails img {
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+}
+
+    .product-thumbnails img:hover,
+    .product-thumbnails img.border {
+        opacity: 1;
+        border-color: #000 !important;
+    }
+
+/* --- C?T THÔNG TIN S?N PH?M --- */
+.product-title {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.product-price {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #000;
+}
+
+/* B? ch?n s? l??ng */
+.quantity-selector {
+    width: 130px; /* C? ??nh chi?u r?ng */
+    border-radius: 0;
+}
+
+    .quantity-selector .form-control {
+        border: none;
+        box-shadow: none; /* B? vi?n xanh khi focus */
+        flex: 1;
+    }
+
+    .quantity-selector .btn {
+        font-size: 1.5rem; /* Cho d?u - + to h?n */
+        padding: 0 0.75rem;
+    }
+
+        .quantity-selector .btn:focus {
+            box-shadow: none;
+        }
+
+/* Nút thêm vào gi? */
+.btn-dark {
+    background-color: #000;
+    border-color: #000;
+    border-radius: 0; /* Bo góc vuông */
+    padding: 0.75rem 0;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+    .btn-dark:hover {
+        background-color: #333;
+        border-color: #333;
+    }
+
+/* CSS cho ph?n mô t? */
+.product-description {
+    line-height: 1.6;
+}
+
+    .product-description ul {
+        padding-left: 1.2rem;
+        font-size: 0.9rem;
+        color: #555;
+    }
+
+    .product-description li {
+        margin-bottom: 0.5rem;
+    }

@@ -1,0 +1,541 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\L\u1EADp tr\u00ECnh web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{38791084-BD3F-4B1B-A34A-9730D9D14B87}|WoodenFuniturestore\\WoodenFuniturestore.csproj|e:\\l\u1EADp tr\u00ECnh web asp\\woodenfuniturestore\\woodenfurniturestore-\\woodenfuniturestore\\views\\sanphamscustomer\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{38791084-BD3F-4B1B-A34A-9730D9D14B87}|WoodenFuniturestore\\WoodenFuniturestore.csproj|solutionrelative:woodenfuniturestore\\views\\sanphamscustomer\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38791084-BD3F-4B1B-A34A-9730D9D14B87}|WoodenFuniturestore\\WoodenFuniturestore.csproj|e:\\l\u1EADp tr\u00ECnh web asp\\woodenfuniturestore\\woodenfurniturestore-\\woodenfuniturestore\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{38791084-BD3F-4B1B-A34A-9730D9D14B87}|WoodenFuniturestore\\WoodenFuniturestore.csproj|solutionrelative:woodenfuniturestore\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38791084-BD3F-4B1B-A34A-9730D9D14B87}|WoodenFuniturestore\\WoodenFuniturestore.csproj|e:\\l\u1EADp tr\u00ECnh web asp\\woodenfuniturestore\\woodenfurniturestore-\\woodenfuniturestore\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{38791084-BD3F-4B1B-A34A-9730D9D14B87}|WoodenFuniturestore\\WoodenFuniturestore.csproj|solutionrelative:woodenfuniturestore\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38791084-BD3F-4B1B-A34A-9730D9D14B87}|WoodenFuniturestore\\WoodenFuniturestore.csproj|e:\\l\u1EADp tr\u00ECnh web asp\\woodenfuniturestore\\woodenfurniturestore-\\woodenfuniturestore\\views\\sanphamscustomer\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{38791084-BD3F-4B1B-A34A-9730D9D14B87}|WoodenFuniturestore\\WoodenFuniturestore.csproj|solutionrelative:woodenfuniturestore\\views\\sanphamscustomer\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38791084-BD3F-4B1B-A34A-9730D9D14B87}|WoodenFuniturestore\\WoodenFuniturestore.csproj|e:\\l\u1EADp tr\u00ECnh web asp\\woodenfuniturestore\\woodenfurniturestore-\\woodenfuniturestore\\controllers\\sanphamscustomercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38791084-BD3F-4B1B-A34A-9730D9D14B87}|WoodenFuniturestore\\WoodenFuniturestore.csproj|solutionrelative:woodenfuniturestore\\controllers\\sanphamscustomercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38791084-BD3F-4B1B-A34A-9730D9D14B87}|WoodenFuniturestore\\WoodenFuniturestore.csproj|e:\\l\u1EADp tr\u00ECnh web asp\\woodenfuniturestore\\woodenfurniturestore-\\woodenfuniturestore\\controllers\\sanphamscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38791084-BD3F-4B1B-A34A-9730D9D14B87}|WoodenFuniturestore\\WoodenFuniturestore.csproj|solutionrelative:woodenfuniturestore\\controllers\\sanphamscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38791084-BD3F-4B1B-A34A-9730D9D14B87}|WoodenFuniturestore\\WoodenFuniturestore.csproj|e:\\l\u1EADp tr\u00ECnh web asp\\woodenfuniturestore\\woodenfurniturestore-\\woodenfuniturestore\\views\\sanphams\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{38791084-BD3F-4B1B-A34A-9730D9D14B87}|WoodenFuniturestore\\WoodenFuniturestore.csproj|solutionrelative:woodenfuniturestore\\views\\sanphams\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38791084-BD3F-4B1B-A34A-9730D9D14B87}|WoodenFuniturestore\\WoodenFuniturestore.csproj|e:\\l\u1EADp tr\u00ECnh web asp\\woodenfuniturestore\\woodenfurniturestore-\\woodenfuniturestore\\models\\sanphamsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38791084-BD3F-4B1B-A34A-9730D9D14B87}|WoodenFuniturestore\\WoodenFuniturestore.csproj|solutionrelative:woodenfuniturestore\\models\\sanphamsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38791084-BD3F-4B1B-A34A-9730D9D14B87}|WoodenFuniturestore\\WoodenFuniturestore.csproj|e:\\l\u1EADp tr\u00ECnh web asp\\woodenfuniturestore\\woodenfurniturestore-\\woodenfuniturestore\\views\\sanphams\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{38791084-BD3F-4B1B-A34A-9730D9D14B87}|WoodenFuniturestore\\WoodenFuniturestore.csproj|solutionrelative:woodenfuniturestore\\views\\sanphams\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38791084-BD3F-4B1B-A34A-9730D9D14B87}|WoodenFuniturestore\\WoodenFuniturestore.csproj|e:\\l\u1EADp tr\u00ECnh web asp\\woodenfuniturestore\\woodenfurniturestore-\\woodenfuniturestore\\views\\sanphams\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{38791084-BD3F-4B1B-A34A-9730D9D14B87}|WoodenFuniturestore\\WoodenFuniturestore.csproj|solutionrelative:woodenfuniturestore\\views\\sanphams\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38791084-BD3F-4B1B-A34A-9730D9D14B87}|WoodenFuniturestore\\WoodenFuniturestore.csproj|e:\\l\u1EADp tr\u00ECnh web asp\\woodenfuniturestore\\woodenfurniturestore-\\woodenfuniturestore\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{38791084-BD3F-4B1B-A34A-9730D9D14B87}|WoodenFuniturestore\\WoodenFuniturestore.csproj|solutionrelative:woodenfuniturestore\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38791084-BD3F-4B1B-A34A-9730D9D14B87}|WoodenFuniturestore\\WoodenFuniturestore.csproj|e:\\l\u1EADp tr\u00ECnh web asp\\woodenfuniturestore\\woodenfurniturestore-\\woodenfuniturestore\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38791084-BD3F-4B1B-A34A-9730D9D14B87}|WoodenFuniturestore\\WoodenFuniturestore.csproj|solutionrelative:woodenfuniturestore\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38791084-BD3F-4B1B-A34A-9730D9D14B87}|WoodenFuniturestore\\WoodenFuniturestore.csproj|e:\\l\u1EADp tr\u00ECnh web asp\\woodenfuniturestore\\woodenfurniturestore-\\woodenfuniturestore\\viewcomponents\\danhmucmenuviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38791084-BD3F-4B1B-A34A-9730D9D14B87}|WoodenFuniturestore\\WoodenFuniturestore.csproj|solutionrelative:woodenfuniturestore\\viewcomponents\\danhmucmenuviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38791084-BD3F-4B1B-A34A-9730D9D14B87}|WoodenFuniturestore\\WoodenFuniturestore.csproj|e:\\l\u1EADp tr\u00ECnh web asp\\woodenfuniturestore\\woodenfurniturestore-\\woodenfuniturestore\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38791084-BD3F-4B1B-A34A-9730D9D14B87}|WoodenFuniturestore\\WoodenFuniturestore.csproj|solutionrelative:woodenfuniturestore\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38791084-BD3F-4B1B-A34A-9730D9D14B87}|WoodenFuniturestore\\WoodenFuniturestore.csproj|e:\\l\u1EADp tr\u00ECnh web asp\\woodenfuniturestore\\woodenfurniturestore-\\woodenfuniturestore\\models\\danhmuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38791084-BD3F-4B1B-A34A-9730D9D14B87}|WoodenFuniturestore\\WoodenFuniturestore.csproj|solutionrelative:woodenfuniturestore\\models\\danhmuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38791084-BD3F-4B1B-A34A-9730D9D14B87}|WoodenFuniturestore\\WoodenFuniturestore.csproj|e:\\l\u1EADp tr\u00ECnh web asp\\woodenfuniturestore\\woodenfurniturestore-\\woodenfuniturestore\\views\\shared\\components\\danhmucmenu\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{38791084-BD3F-4B1B-A34A-9730D9D14B87}|WoodenFuniturestore\\WoodenFuniturestore.csproj|solutionrelative:woodenfuniturestore\\views\\shared\\components\\danhmucmenu\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38791084-BD3F-4B1B-A34A-9730D9D14B87}|WoodenFuniturestore\\WoodenFuniturestore.csproj|e:\\l\u1EADp tr\u00ECnh web asp\\woodenfuniturestore\\woodenfurniturestore-\\woodenfuniturestore\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38791084-BD3F-4B1B-A34A-9730D9D14B87}|WoodenFuniturestore\\WoodenFuniturestore.csproj|solutionrelative:woodenfuniturestore\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38791084-BD3F-4B1B-A34A-9730D9D14B87}|WoodenFuniturestore\\WoodenFuniturestore.csproj|e:\\l\u1EADp tr\u00ECnh web asp\\woodenfuniturestore\\woodenfurniturestore-\\woodenfuniturestore\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{38791084-BD3F-4B1B-A34A-9730D9D14B87}|WoodenFuniturestore\\WoodenFuniturestore.csproj|solutionrelative:woodenfuniturestore\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38791084-BD3F-4B1B-A34A-9730D9D14B87}|WoodenFuniturestore\\WoodenFuniturestore.csproj|e:\\l\u1EADp tr\u00ECnh web asp\\woodenfuniturestore\\woodenfurniturestore-\\woodenfuniturestore\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{38791084-BD3F-4B1B-A34A-9730D9D14B87}|WoodenFuniturestore\\WoodenFuniturestore.csproj|solutionrelative:woodenfuniturestore\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38791084-BD3F-4B1B-A34A-9730D9D14B87}|WoodenFuniturestore\\WoodenFuniturestore.csproj|e:\\l\u1EADp tr\u00ECnh web asp\\woodenfuniturestore\\woodenfurniturestore-\\woodenfuniturestore\\models\\danhgium.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38791084-BD3F-4B1B-A34A-9730D9D14B87}|WoodenFuniturestore\\WoodenFuniturestore.csproj|solutionrelative:woodenfuniturestore\\models\\danhgium.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38791084-BD3F-4B1B-A34A-9730D9D14B87}|WoodenFuniturestore\\WoodenFuniturestore.csproj|e:\\l\u1EADp tr\u00ECnh web asp\\woodenfuniturestore\\woodenfurniturestore-\\woodenfuniturestore\\models\\khuyenmai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38791084-BD3F-4B1B-A34A-9730D9D14B87}|WoodenFuniturestore\\WoodenFuniturestore.csproj|solutionrelative:woodenfuniturestore\\models\\khuyenmai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38791084-BD3F-4B1B-A34A-9730D9D14B87}|WoodenFuniturestore\\WoodenFuniturestore.csproj|e:\\l\u1EADp tr\u00ECnh web asp\\woodenfuniturestore\\woodenfurniturestore-\\woodenfuniturestore\\models\\sanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38791084-BD3F-4B1B-A34A-9730D9D14B87}|WoodenFuniturestore\\WoodenFuniturestore.csproj|solutionrelative:woodenfuniturestore\\models\\sanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38791084-BD3F-4B1B-A34A-9730D9D14B87}|WoodenFuniturestore\\WoodenFuniturestore.csproj|e:\\l\u1EADp tr\u00ECnh web asp\\woodenfuniturestore\\woodenfurniturestore-\\woodenfuniturestore\\controllers\\danhmucscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38791084-BD3F-4B1B-A34A-9730D9D14B87}|WoodenFuniturestore\\WoodenFuniturestore.csproj|solutionrelative:woodenfuniturestore\\controllers\\danhmucscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38791084-BD3F-4B1B-A34A-9730D9D14B87}|WoodenFuniturestore\\WoodenFuniturestore.csproj|e:\\l\u1EADp tr\u00ECnh web asp\\woodenfuniturestore\\woodenfurniturestore-\\woodenfuniturestore\\views\\danhmucs\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{38791084-BD3F-4B1B-A34A-9730D9D14B87}|WoodenFuniturestore\\WoodenFuniturestore.csproj|solutionrelative:woodenfuniturestore\\views\\danhmucs\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38791084-BD3F-4B1B-A34A-9730D9D14B87}|WoodenFuniturestore\\WoodenFuniturestore.csproj|e:\\l\u1EADp tr\u00ECnh web asp\\woodenfuniturestore\\woodenfurniturestore-\\woodenfuniturestore\\views\\danhmucs\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{38791084-BD3F-4B1B-A34A-9730D9D14B87}|WoodenFuniturestore\\WoodenFuniturestore.csproj|solutionrelative:woodenfuniturestore\\views\\danhmucs\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38791084-BD3F-4B1B-A34A-9730D9D14B87}|WoodenFuniturestore\\WoodenFuniturestore.csproj|e:\\l\u1EADp tr\u00ECnh web asp\\woodenfuniturestore\\woodenfurniturestore-\\woodenfuniturestore\\views\\danhmucs\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{38791084-BD3F-4B1B-A34A-9730D9D14B87}|WoodenFuniturestore\\WoodenFuniturestore.csproj|solutionrelative:woodenfuniturestore\\views\\danhmucs\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38791084-BD3F-4B1B-A34A-9730D9D14B87}|WoodenFuniturestore\\WoodenFuniturestore.csproj|e:\\l\u1EADp tr\u00ECnh web asp\\woodenfuniturestore\\woodenfurniturestore-\\woodenfuniturestore\\views\\danhmucs\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{38791084-BD3F-4B1B-A34A-9730D9D14B87}|WoodenFuniturestore\\WoodenFuniturestore.csproj|solutionrelative:woodenfuniturestore\\views\\danhmucs\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38791084-BD3F-4B1B-A34A-9730D9D14B87}|WoodenFuniturestore\\WoodenFuniturestore.csproj|e:\\l\u1EADp tr\u00ECnh web asp\\woodenfuniturestore\\woodenfurniturestore-\\woodenfuniturestore\\views\\danhmucs\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{38791084-BD3F-4B1B-A34A-9730D9D14B87}|WoodenFuniturestore\\WoodenFuniturestore.csproj|solutionrelative:woodenfuniturestore\\views\\danhmucs\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38791084-BD3F-4B1B-A34A-9730D9D14B87}|WoodenFuniturestore\\WoodenFuniturestore.csproj|e:\\l\u1EADp tr\u00ECnh web asp\\woodenfuniturestore\\woodenfurniturestore-\\woodenfuniturestore\\controllers\\nguoidungscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38791084-BD3F-4B1B-A34A-9730D9D14B87}|WoodenFuniturestore\\WoodenFuniturestore.csproj|solutionrelative:woodenfuniturestore\\controllers\\nguoidungscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "E:\\L\u1EADp tr\u00ECnh web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\Views\\SanPhamscustomer\\Details.cshtml",
+              "RelativeDocumentMoniker": "WoodenFuniturestore\\Views\\SanPhamscustomer\\Details.cshtml",
+              "ToolTip": "E:\\L\u1EADp tr\u00ECnh web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\Views\\SanPhamscustomer\\Details.cshtml",
+              "RelativeToolTip": "WoodenFuniturestore\\Views\\SanPhamscustomer\\Details.cshtml",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAACkAAABdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-08T07:03:12.093Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SanPhamsViewModel.cs",
+              "DocumentMoniker": "E:\\L\u1EADp tr\u00ECnh web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\Models\\SanPhamsViewModel.cs",
+              "RelativeDocumentMoniker": "WoodenFuniturestore\\Models\\SanPhamsViewModel.cs",
+              "ToolTip": "E:\\L\u1EADp tr\u00ECnh web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\Models\\SanPhamsViewModel.cs",
+              "RelativeToolTip": "WoodenFuniturestore\\Models\\SanPhamsViewModel.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAxwBQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-06T10:10:32.868Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\L\u1EADp tr\u00ECnh web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\Views\\SanPhamscustomer\\Index.cshtml",
+              "RelativeDocumentMoniker": "WoodenFuniturestore\\Views\\SanPhamscustomer\\Index.cshtml",
+              "ToolTip": "E:\\L\u1EADp tr\u00ECnh web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\Views\\SanPhamscustomer\\Index.cshtml",
+              "RelativeToolTip": "WoodenFuniturestore\\Views\\SanPhamscustomer\\Index.cshtml",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAADMAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-06T06:13:36.668Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "DanhMuc.cs",
+              "DocumentMoniker": "E:\\L\u1EADp tr\u00ECnh web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\Models\\DanhMuc.cs",
+              "RelativeDocumentMoniker": "WoodenFuniturestore\\Models\\DanhMuc.cs",
+              "ToolTip": "E:\\L\u1EADp tr\u00ECnh web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\Models\\DanhMuc.cs",
+              "RelativeToolTip": "WoodenFuniturestore\\Models\\DanhMuc.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-06T06:31:05.65Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\L\u1EADp tr\u00ECnh web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\Views\\SanPhams\\Index.cshtml",
+              "RelativeDocumentMoniker": "WoodenFuniturestore\\Views\\SanPhams\\Index.cshtml",
+              "ToolTip": "E:\\L\u1EADp tr\u00ECnh web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\Views\\SanPhams\\Index.cshtml",
+              "RelativeToolTip": "WoodenFuniturestore\\Views\\SanPhams\\Index.cshtml",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAAAGMAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-06T10:07:27.003Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SanPhamsController.cs",
+              "DocumentMoniker": "E:\\L\u1EADp tr\u00ECnh web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\Controllers\\SanPhamsController.cs",
+              "RelativeDocumentMoniker": "WoodenFuniturestore\\Controllers\\SanPhamsController.cs",
+              "ToolTip": "E:\\L\u1EADp tr\u00ECnh web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\Controllers\\SanPhamsController.cs",
+              "RelativeToolTip": "WoodenFuniturestore\\Controllers\\SanPhamsController.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwB0AAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-07T06:00:13.424Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "site.css",
+              "DocumentMoniker": "E:\\L\u1EADp tr\u00ECnh web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "WoodenFuniturestore\\wwwroot\\css\\site.css",
+              "ToolTip": "E:\\L\u1EADp tr\u00ECnh web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "WoodenFuniturestore\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAQwMEAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-11-07T01:49:29.66Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "E:\\L\u1EADp tr\u00ECnh web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\Views\\SanPhams\\Edit.cshtml",
+              "RelativeDocumentMoniker": "WoodenFuniturestore\\Views\\SanPhams\\Edit.cshtml",
+              "ToolTip": "E:\\L\u1EADp tr\u00ECnh web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\Views\\SanPhams\\Edit.cshtml",
+              "RelativeToolTip": "WoodenFuniturestore\\Views\\SanPhams\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-08T07:24:27.433Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\L\u1EADp tr\u00ECnh web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "WoodenFuniturestore\\Views\\Home\\Index.cshtml",
+              "ToolTip": "E:\\L\u1EADp tr\u00ECnh web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "WoodenFuniturestore\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAAEEAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-06T08:54:59.78Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SanPhamscustomerController.cs",
+              "DocumentMoniker": "E:\\L\u1EADp tr\u00ECnh web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\Controllers\\SanPhamscustomerController.cs",
+              "RelativeDocumentMoniker": "WoodenFuniturestore\\Controllers\\SanPhamscustomerController.cs",
+              "ToolTip": "E:\\L\u1EADp tr\u00ECnh web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\Controllers\\SanPhamscustomerController.cs",
+              "RelativeToolTip": "WoodenFuniturestore\\Controllers\\SanPhamscustomerController.cs",
+              "ViewState": "AgIAAJcAAAAAAAAAAAAUwMsAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-06T10:22:21.483Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "E:\\L\u1EADp tr\u00ECnh web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\Views\\SanPhams\\Details.cshtml",
+              "RelativeDocumentMoniker": "WoodenFuniturestore\\Views\\SanPhams\\Details.cshtml",
+              "ToolTip": "E:\\L\u1EADp tr\u00ECnh web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\Views\\SanPhams\\Details.cshtml",
+              "RelativeToolTip": "WoodenFuniturestore\\Views\\SanPhams\\Details.cshtml",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAAAFAAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-08T07:24:29.103Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "E:\\L\u1EADp tr\u00ECnh web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "WoodenFuniturestore\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "E:\\L\u1EADp tr\u00ECnh web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "WoodenFuniturestore\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-06T08:03:01.265Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\L\u1EADp tr\u00ECnh web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\Program.cs",
+              "RelativeDocumentMoniker": "WoodenFuniturestore\\Program.cs",
+              "ToolTip": "E:\\L\u1EADp tr\u00ECnh web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\Program.cs",
+              "RelativeToolTip": "WoodenFuniturestore\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-07T02:12:24.997Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "E:\\L\u1EADp tr\u00ECnh web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "WoodenFuniturestore\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "E:\\L\u1EADp tr\u00ECnh web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "WoodenFuniturestore\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABYAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-06T06:13:47.708Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "DanhMucMenuViewComponent.cs",
+              "DocumentMoniker": "E:\\L\u1EADp tr\u00ECnh web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\ViewComponents\\DanhMucMenuViewComponent.cs",
+              "RelativeDocumentMoniker": "WoodenFuniturestore\\ViewComponents\\DanhMucMenuViewComponent.cs",
+              "ToolTip": "E:\\L\u1EADp tr\u00ECnh web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\ViewComponents\\DanhMucMenuViewComponent.cs",
+              "RelativeToolTip": "WoodenFuniturestore\\ViewComponents\\DanhMucMenuViewComponent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-06T09:18:32.054Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "E:\\L\u1EADp tr\u00ECnh web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "WoodenFuniturestore\\Controllers\\HomeController.cs",
+              "ToolTip": "E:\\L\u1EADp tr\u00ECnh web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "WoodenFuniturestore\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAawEYAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-06T09:30:29.527Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Default.cshtml",
+              "DocumentMoniker": "E:\\L\u1EADp tr\u00ECnh web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\Views\\Shared\\Components\\DanhMucMenu\\Default.cshtml",
+              "RelativeDocumentMoniker": "WoodenFuniturestore\\Views\\Shared\\Components\\DanhMucMenu\\Default.cshtml",
+              "ToolTip": "E:\\L\u1EADp tr\u00ECnh web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\Views\\Shared\\Components\\DanhMucMenu\\Default.cshtml",
+              "RelativeToolTip": "WoodenFuniturestore\\Views\\Shared\\Components\\DanhMucMenu\\Default.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-06T09:23:24.019Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "KhuyenMai.cs",
+              "DocumentMoniker": "E:\\L\u1EADp tr\u00ECnh web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\Models\\KhuyenMai.cs",
+              "RelativeDocumentMoniker": "WoodenFuniturestore\\Models\\KhuyenMai.cs",
+              "ToolTip": "E:\\L\u1EADp tr\u00ECnh web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\Models\\KhuyenMai.cs",
+              "RelativeToolTip": "WoodenFuniturestore\\Models\\KhuyenMai.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAzwBwAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-06T10:13:37.575Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "E:\\L\u1EADp tr\u00ECnh web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "WoodenFuniturestore\\Views\\_ViewStart.cshtml",
+              "ToolTip": "E:\\L\u1EADp tr\u00ECnh web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "WoodenFuniturestore\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-07T01:49:17.784Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "DanhGium.cs",
+              "DocumentMoniker": "E:\\L\u1EADp tr\u00ECnh web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\Models\\DanhGium.cs",
+              "RelativeDocumentMoniker": "WoodenFuniturestore\\Models\\DanhGium.cs",
+              "ToolTip": "E:\\L\u1EADp tr\u00ECnh web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\Models\\DanhGium.cs",
+              "RelativeToolTip": "WoodenFuniturestore\\Models\\DanhGium.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBZwBQAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-06T10:15:36.836Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "E:\\L\u1EADp tr\u00ECnh web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "WoodenFuniturestore\\Views\\_ViewImports.cshtml",
+              "ToolTip": "E:\\L\u1EADp tr\u00ECnh web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "WoodenFuniturestore\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-07T01:49:19.355Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "SanPham.cs",
+              "DocumentMoniker": "E:\\L\u1EADp tr\u00ECnh web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\Models\\SanPham.cs",
+              "RelativeDocumentMoniker": "WoodenFuniturestore\\Models\\SanPham.cs",
+              "ToolTip": "E:\\L\u1EADp tr\u00ECnh web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\Models\\SanPham.cs",
+              "RelativeToolTip": "WoodenFuniturestore\\Models\\SanPham.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEIAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-06T09:57:27.054Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\L\u1EADp tr\u00ECnh web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\Views\\DanhMucs\\Index.cshtml",
+              "RelativeDocumentMoniker": "WoodenFuniturestore\\Views\\DanhMucs\\Index.cshtml",
+              "ToolTip": "E:\\L\u1EADp tr\u00ECnh web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\Views\\DanhMucs\\Index.cshtml",
+              "RelativeToolTip": "WoodenFuniturestore\\Views\\DanhMucs\\Index.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAIBJwBsAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-06T08:19:23.434Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "E:\\L\u1EADp tr\u00ECnh web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\Views\\DanhMucs\\Edit.cshtml",
+              "RelativeDocumentMoniker": "WoodenFuniturestore\\Views\\DanhMucs\\Edit.cshtml",
+              "ToolTip": "E:\\L\u1EADp tr\u00ECnh web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\Views\\DanhMucs\\Edit.cshtml",
+              "RelativeToolTip": "WoodenFuniturestore\\Views\\DanhMucs\\Edit.cshtml",
+              "ViewState": "AgIAABEAAAAAAAAAAAAhwBgAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-06T08:19:11.675Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "E:\\L\u1EADp tr\u00ECnh web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\Views\\DanhMucs\\Details.cshtml",
+              "RelativeDocumentMoniker": "WoodenFuniturestore\\Views\\DanhMucs\\Details.cshtml",
+              "ToolTip": "E:\\L\u1EADp tr\u00ECnh web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\Views\\DanhMucs\\Details.cshtml",
+              "RelativeToolTip": "WoodenFuniturestore\\Views\\DanhMucs\\Details.cshtml",
+              "ViewState": "AgIAABAAAAAAAAAAAAAhwBcAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-06T08:19:00.394Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "E:\\L\u1EADp tr\u00ECnh web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\Views\\DanhMucs\\Delete.cshtml",
+              "RelativeDocumentMoniker": "WoodenFuniturestore\\Views\\DanhMucs\\Delete.cshtml",
+              "ToolTip": "E:\\L\u1EADp tr\u00ECnh web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\Views\\DanhMucs\\Delete.cshtml",
+              "RelativeToolTip": "WoodenFuniturestore\\Views\\DanhMucs\\Delete.cshtml",
+              "ViewState": "AgIAABEAAAAAAAAAAAAhwBgAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-06T08:18:45.254Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "E:\\L\u1EADp tr\u00ECnh web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\Views\\DanhMucs\\Create.cshtml",
+              "RelativeDocumentMoniker": "WoodenFuniturestore\\Views\\DanhMucs\\Create.cshtml",
+              "ToolTip": "E:\\L\u1EADp tr\u00ECnh web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\Views\\DanhMucs\\Create.cshtml",
+              "RelativeToolTip": "WoodenFuniturestore\\Views\\DanhMucs\\Create.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAIBJwBcAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-06T08:18:16.834Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "DanhMucsController.cs",
+              "DocumentMoniker": "E:\\L\u1EADp tr\u00ECnh web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\Controllers\\DanhMucsController.cs",
+              "RelativeDocumentMoniker": "WoodenFuniturestore\\Controllers\\DanhMucsController.cs",
+              "ToolTip": "E:\\L\u1EADp tr\u00ECnh web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\Controllers\\DanhMucsController.cs",
+              "RelativeToolTip": "WoodenFuniturestore\\Controllers\\DanhMucsController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAIBJwHcAAABhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-06T06:40:44.024Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "NguoiDungsController.cs",
+              "DocumentMoniker": "E:\\L\u1EADp tr\u00ECnh web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\Controllers\\NguoiDungsController.cs",
+              "RelativeDocumentMoniker": "WoodenFuniturestore\\Controllers\\NguoiDungsController.cs",
+              "ToolTip": "E:\\L\u1EADp tr\u00ECnh web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\Controllers\\NguoiDungsController.cs",
+              "RelativeToolTip": "WoodenFuniturestore\\Controllers\\NguoiDungsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-06T06:13:27.368Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

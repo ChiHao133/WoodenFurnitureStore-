@@ -1,90 +1,67 @@
 ﻿@model WoodenFuniturestore.Models.SanPham
 
 @{
-    ViewData["Title"] = "Details";
+    ViewData["Title"] = "Chi tiết sản phẩm";
 }
 
-<h1>Details</h1>
+<div class="container my-5">
+    <div class="row">
 
-<div>
-    <h4>SanPham</h4>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.TenSanPham)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.TenSanPham)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.MoTa)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.MoTa)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Gia)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Gia)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.KichThuoc)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.KichThuoc)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.SoLuongTon)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.SoLuongTon)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.HinhAnh)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.HinhAnh)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.IsNoiBat)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.IsNoiBat)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.IsActive)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.IsActive)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.NgayTao)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.NgayTao)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.ChatLieu)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.ChatLieu.ChatLieuId)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.DanhMuc)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.DanhMuc.DanhMucId)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.KhuyenMai)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.KhuyenMai.KhuyenMaiId)
-        </dd>
-    </dl>
-</div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model?.SanPhamId">Edit</a> |
-    <a asp-action="Index">Back to List</a>
-</div>
+        <div class="col-md-7">
+            <div class="row">
+                <div class="col-md-2 product-thumbnails">
+                    <img src="~/images/banghe1.jpg" alt="Thumbnail 1" class="img-fluid mb-2 border rounded">
+                </div>
+
+                <div class="col-md-10">
+                    <img src="~/images/banghe1.jpg" alt="@Model.TenSanPham" class="img-fluid rounded">
+                </div>
+
+            </div>
+        </div> <div class="col-md-5 product-details">
+
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a asp-action="Index" asp-controller="Home">TRANG CHỦ</a></li>
+                    <li class="breadcrumb-item"><a asp-action="Index" asp-controller="SanPham">SẢN PHẨM</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">@Model.TenSanPham</li>
+                </ol>
+            </nav>
+
+            <h1 class="product-title">@Model.TenSanPham</h1>
+
+            <div class="product-price my-3">
+                @Model.Gia.ToString("N0")đ
+            </div>
+
+            <form asp-controller="GioHangs" asp-action="ThemVaoGio" method="post">
+                <input type="hidden" asp-for="SanPhamId" />
+
+                <label class="form-label fw-bold">Số lượng:</label>
+                <div class="quantity-selector d-flex align-items-center border mb-3">
+                    <input type="number" name="name" value="" min="1" max="@Model.SoLuongTon"/>
+                </div>
+
+                <button type="submit" class="btn btn-dark w-100 btn-lg">
+                    Thêm vào giỏ
+                </button>
+            </form>
+
+            <a asp-action="Index" class="btn btn-outline-secondary w-100 mt-2">Quay lại danh sách</a>
+
+
+            <div class="product-description mt-4">
+                <h6 class="fw-bold">MÔ TẢ CHI TIẾT</h6>
+                <p>@Model.MoTa</p>
+                <ul>
+                    <li><strong>Chất liệu:</strong> @Model.ChatLieu?.TenChatLieu</li>
+                    <li><strong>Kích thước:</strong> @Model.KichThuoc</li>
+                    <li><strong>Danh mục:</strong> @Model.DanhMuc?.TenDanhMuc</li>
+                    <li><strong>Số lượng còn:</strong> @Model.SoLuongTon</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</div> ```
+
