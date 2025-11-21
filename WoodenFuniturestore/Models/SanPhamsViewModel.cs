@@ -1,10 +1,10 @@
 ﻿namespace WoodenFuniturestore.Models
 {
-    internal class SanPhamsViewModel
+    public class SanPhamsViewModel
     {
         // ID để tạo link chi tiết, thêm vào giỏ hàng...
         public int Id { get; set; }
-
+        public decimal PhanTramGiam { get; set; }
         public string TenSanPham { get; set; }
 
         // Chỉ chứa tên file ảnh, ví dụ: "ten-san-pham.jpg"
@@ -21,5 +21,6 @@
 
         // Điểm đánh giá trung bình
         public double Rating { get; set; }
+        public int? danhMuc {  get; set; }
     }
 }

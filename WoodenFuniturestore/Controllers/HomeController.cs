@@ -19,45 +19,45 @@ namespace WoodenFuniturestore.Controllers
 
         public async Task<IActionResult> Index()
         {
-            // ??nh d?ng ti?n t? VN?
+         
             var culture = new CultureInfo("vi-VN");
 
-            // 1. L?y d? li?u thô t? CSDL, bao g?m c? thông tin KhuyenMai và DanhGia
+           
             var sanPhamsTuDb = await _context.SanPhams
-                                         .Include(sp => sp.KhuyenMai) // L?y thông tin khuy?n mãi liên quan
-                                         .Include(sp => sp.DanhGia)   // L?y các ?ánh giá liên quan
-                                         .Where(sp => sp.IsActive == true) // Ch? l?y s?n ph?m ?ang ho?t ??ng
+                                         .Include(sp => sp.KhuyenMai) 
+                                         .Include(sp => sp.DanhGia)  
+                                         .Where(sp => sp.IsActive == true) 
                                          .OrderByDescending(sp => sp.SanPhamId)
                                          .Take(8)
                                          .ToListAsync();
 
-            // 2. Chuy?n ??i (Map/Project) t? List<SanPham> sang List<SanPhamsViewModel>
+            
             var viewModels = sanPhamsTuDb.Select(sp =>
             {
-                // --- X? lý logic giá và khuy?n mãi ---
+             
                 decimal giaBan = sp.Gia;
                 bool coKhuyenMai = false;
-
-                // Ki?m tra xem s?n ph?m có khuy?n mãi không và khuy?n mãi có còn hi?u l?c không
+                decimal phantramgiam = 0;
+                
                 if (sp.KhuyenMai != null &&
                     sp.KhuyenMai.NgayBatDau <= DateTime.Now &&
                     sp.KhuyenMai.NgayKetThuc >= DateTime.Now)
                 {
                     coKhuyenMai = true;
-                    // Gi? s? KhuyenMai có thu?c tính PhanTramGiam (ví d?: 10 cho 10%)
-                    // B?n c?n ?i?u ch?nh logic này cho phù h?p v?i model KhuyenMai c?a b?n
+          
                     if (sp.KhuyenMai.PhanTramGiam > 0)
                     {
                         giaBan = sp.Gia * (1 - sp.KhuyenMai.PhanTramGiam / 100);
+                        phantramgiam = sp.KhuyenMai.PhanTramGiam;
                     }
-                    // Có th? có tr??ng h?p gi?m giá tr?c ti?p m?t s? ti?n
+                   
                 }
 
-                // --- X? lý logic ?ánh giá ---
+          
                 double rating = 0;
                 if (sp.DanhGia != null && sp.DanhGia.Any())
                 {
-                    // Gi? s? model DanhGium có thu?c tính SoSao (t? 1 ??n 5)
+                   
                     rating =sp.DanhGia.Average(dg => dg.Rating) ?? 0;
                 }
 
@@ -70,11 +70,10 @@ namespace WoodenFuniturestore.Controllers
                     GiaGoc = sp.Gia,
                     GiaBan = giaBan,
                     CoKhuyenMai = coKhuyenMai,
-                    Rating = rating
+                    Rating = rating,
+                    PhanTramGiam=phantramgiam
                 };
             }).ToList();
-
-            // 3. Tr? v? View v?i danh sách ViewModel ?ã ???c x? lý
             return View(viewModels);
         }
     }

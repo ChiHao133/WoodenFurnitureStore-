@@ -65,7 +65,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column; /* X?p icon và ch? theo chi?u d?c */
-
+    z-index: 1;
     color: white; /* Màu ch? và icon */
     cursor: pointer; /* Bi?u t??ng con tr? chu?t */
 }
@@ -88,13 +88,6 @@ body {
 }
 
 ---
-
-### 2. Mã CSS Tùy Ch?nh (B?t bu?c)
-
-Ph?n CSS này v?n gi? nguyên nh? ví d? tr??c. B?n c?n l?u nó vào file (ví d?: `wwwroot/css/product-detail.css`) và link nó trong file `_Layout.cshtml` ho?c ? ??u file này.
-
-```css
-/* --- CÀI ??T CHUNG --- */
 .product-details { /* Tên class cho c?t bên ph?i */
     font-family: Arial, sans-serif;
     color: #333;
@@ -191,4 +184,13 @@ Ph?n CSS này v?n gi? nguyên nh? ví d? tr??c. B?n c?n l?u nó vào file (ví d?: `ww
 
     .product-description li {
         margin-bottom: 0.5rem;
+    }
+.card {
+    position: relative;
+}
+    .card .badge {
+        z-index: 2;
+        font-size: 0.75rem;
+        padding: 0.4em 0.6em;
+        border-radius: 0.5rem;
     }

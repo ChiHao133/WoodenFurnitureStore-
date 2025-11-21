@@ -1,0 +1,203 @@
+﻿@model IEnumerable<WoodenFuniturestore.Models.ChiTietGioHang>
+@{
+    ViewData["Title"] = "Giỏ hàng của bạn";
+    // Tính tổng ban đầu (JS sẽ cập nhật) - Dùng ??0 như code của bạn
+    decimal tongTien = Model.Sum(item => item.SoLuong * item.GiaBan) ?? 0;
+}
+
+<div class="container mt-4">
+    <h2>@ViewData["Title"]</h2>
+
+    @if (TempData["CartSuccess"] != null)
+    {
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            @TempData["CartSuccess"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+    @if (TempData["CartError"] != null)
+    {
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            @TempData["CartError"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+
+    @if (Model == null || !Model.Any())
+    {
+        <div class="alert alert-info text-center" role="alert">
+            Giỏ hàng của bạn đang trống.
+            <a asp-controller="Home" asp-action="Index" class="alert-link">Tiếp tục mua sắm</a>.
+        </div>
+    }
+    else
+    {
+        <div class="row">
+            <div class="col-lg-8">
+                <table class="table align-middle">
+                    <thead>
+                        <tr>
+                            <th scope="col" style="width: 30px;">
+                                <input class="form-check-input" type="checkbox" id="check-all" checked />
+                            </th>
+                            <th scope="col" colspan="2">Sản phẩm</th>
+                            <th scope="col">Đơn giá</th>
+                            <th scope="col">Số lượng</th>
+                            <th scope="col">Tạm tính</th>
+                            <th scope="col"></th>
+                        </tr>
+                    </thead>
+                    <tbody id="cart-item-list">
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>
+                                    <input class="form-check-input cart-item-check"
+                                           type="checkbox"
+                                           name="selectedItems"
+                                           value="@item.MaChiTiet"
+                                           data-price="@((item.SoLuong * item.GiaBan) ?? 0)" checked>
+                                </td>
+                                <td style="width: 100px;">
+                                    @if (!string.IsNullOrEmpty(item.MaSanPhamNavigation.HinhAnh))
+                                    {
+                                        <img src="~/images/Product/@item.MaSanPhamNavigation.HinhAnh" class="img-fluid rounded" alt="@item.MaSanPhamNavigation.TenSanPham" style="width: 80px; height: 80px; object-fit: cover;">
+                                    }
+                                </td>
+                                <td>
+                                    <a asp-controller="SanPhamscustomer" asp-action="Details" asp-route-id="@item.MaSanPham" class="text-dark text-decoration-none">
+                                        @item.MaSanPhamNavigation.TenSanPham
+                                    </a>
+                                </td>
+                                <td>@((item.GiaBan ?? 0).ToString("N0")) đ</td>
+                                <td style="width: 150px;">
+                                    <form asp-controller="GioHangs" asp-action="UpdateCart" method="post">
+                                        <input type="hidden" name="maChiTiet" value="@item.MaChiTiet" />
+                                        <div class="input-group">
+                                            <input type="number" name="soLuong" class="form-control form-control-sm" value="@item.SoLuong" min="1">
+                                            <button type="submit" class="btn btn-outline-secondary btn-sm">Cập nhật</button>
+                                        </div>
+                                    </form>
+                                </td>
+                                <td>@(((item.SoLuong * item.GiaBan) ?? 0).ToString("N0")) đ</td>
+                                <td>
+                                    <form asp-controller="GioHangs" asp-action="RemoveFromCart" method="post" class="form-xoa-gio-hang">
+                                        <input type="hidden" name="maChiTiet" value="@item.MaChiTiet" />
+                                        <button type="button" class="btn btn-outline-danger btn-sm btn-xoa-gio-hang">
+                                            <i class="bi bi-trash"></i>
+                                        </button>
+                                    </form>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Tổng cộng giỏ hàng</h5>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex justify-content-between align-items-center fw-bold">
+                                Tổng tiền
+                                <span class="fs-5 text-danger" id="tong-tien-hien-thi">
+                                    @tongTien.ToString("N0") đ
+                                </span>
+                            </li>
+                        </ul>
+
+                        <button type="button" id="btn-checkout" class="btn btn-primary w-100 mt-3">
+                            Tiến hành thanh toán
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const checkAll = document.getElementById('check-all');
+            const itemCheckboxes = document.querySelectorAll('.cart-item-check');
+            const spanTongTien = document.getElementById('tong-tien-hien-thi');
+
+            function formatCurrency(number) {
+                return new Intl.NumberFormat('vi-VN').format(number) + ' đ';
+            }
+
+            // Hàm tính tổng (không đổi)
+            function updateTotal() {
+                let newTotal = 0;
+                let allChecked = true;
+                itemCheckboxes.forEach(function (checkbox) {
+                    if (checkbox.checked) {
+                        newTotal += parseFloat(checkbox.getAttribute('data-price'));
+                    } else {
+                        allChecked = false;
+                    }
+                });
+                spanTongTien.textContent = formatCurrency(newTotal);
+                if (checkAll) checkAll.checked = allChecked;
+            }
+
+            // Gán sự kiện cho các checkbox (không đổi)
+            itemCheckboxes.forEach(checkbox => checkbox.addEventListener('change', updateTotal));
+            if (checkAll) checkAll.addEventListener('change', function () {
+                itemCheckboxes.forEach(checkbox => checkbox.checked = checkAll.checked);
+                updateTotal();
+            });
+
+            // Gán sự kiện cho nút Xóa SweetAlert (không đổi)
+            document.querySelectorAll('.btn-xoa-gio-hang').forEach(button => {
+                button.addEventListener('click', function (event) {
+                    event.preventDefault();
+                    const form = this.closest('form');
+                    Swal.fire({
+                        title: 'Bạn có chắc chắn?', text: "Bạn sẽ không thể hoàn tác!", icon: 'warning',
+                        showCancelButton: true, confirmButtonColor: '#3085d6', cancelButtonColor: '#d33',
+                        confirmButtonText: 'Vâng, xóa nó!', cancelButtonText: 'Hủy bỏ'
+                    }).then((result) => { if (result.isConfirmed) form.submit(); });
+                });
+            });
+
+            // === CODE MỚI CHO NÚT THANH TOÁN ===
+            document.getElementById('btn-checkout').addEventListener('click', function () {
+
+                // 1. Lấy tất cả checkbox đã được check
+                const checkedItems = document.querySelectorAll('.cart-item-check:checked');
+
+                if (checkedItems.length === 0) {
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Oops...',
+                        text: 'Bạn chưa chọn sản phẩm nào để thanh toán!',
+                    });
+                    return; // Dừng lại
+                }
+
+                // 2. Chuẩn bị URL (Dùng "CheckOut" như code của bạn)
+                const baseUrl = '@Url.Action("Index", "CheckOut")';
+                const params = new URLSearchParams();
+
+                // 3. Thêm ID của từng món hàng vào URL
+                checkedItems.forEach(function (checkbox) {
+                    params.append('selectedItems', checkbox.value);
+                });
+
+                // 4. Tạo URL cuối cùng
+                const url = baseUrl + '?' + params.toString();
+
+                // 5. Chuyển hướng người dùng đến trang thanh toán
+                window.location.href = url;
+            });
+
+            // Tính tổng lần đầu khi tải trang
+            updateTotal();
+        });
+    </script>
+}

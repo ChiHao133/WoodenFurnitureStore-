@@ -48,6 +48,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hhdExpZXV4XEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[E:/Lập trình web ASP/WoodenFuniturestore/WoodenFurnitureStore-/WoodenFuniturestore/Views/CheckOut/DatHangThanhCong.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hlY2tPdXRcRGF0SGFuZ1RoYW5oQ29uZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Lập trình web ASP/WoodenFuniturestore/WoodenFurnitureStore-/WoodenFuniturestore/Views/CheckOut/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hlY2tPdXRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/Lập trình web ASP/WoodenFuniturestore/WoodenFurnitureStore-/WoodenFuniturestore/Views/ChiTietDonHangs/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hpVGlldERvbkhhbmdzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -128,6 +136,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9uSGFuZ3NcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[E:/Lập trình web ASP/WoodenFuniturestore/WoodenFurnitureStore-/WoodenFuniturestore/Views/GioHangs/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2lvSGFuZ3NcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/Lập trình web ASP/WoodenFuniturestore/WoodenFurnitureStore-/WoodenFuniturestore/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -156,24 +168,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2h1eWVuTWFpc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Lập trình web ASP/WoodenFuniturestore/WoodenFurnitureStore-/WoodenFuniturestore/Views/NguoiDungs/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmd1b2lEdW5nc1xDcmVhdGUuY3NodG1s
+[E:/Lập trình web ASP/WoodenFuniturestore/WoodenFurnitureStore-/WoodenFuniturestore/Views/NguoiDungs/AccessDenied.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmd1b2lEdW5nc1xBY2Nlc3NEZW5pZWQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Lập trình web ASP/WoodenFuniturestore/WoodenFurnitureStore-/WoodenFuniturestore/Views/NguoiDungs/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmd1b2lEdW5nc1xEZWxldGUuY3NodG1s
+[E:/Lập trình web ASP/WoodenFuniturestore/WoodenFurnitureStore-/WoodenFuniturestore/Views/NguoiDungs/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmd1b2lEdW5nc1xMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Lập trình web ASP/WoodenFuniturestore/WoodenFurnitureStore-/WoodenFuniturestore/Views/NguoiDungs/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmd1b2lEdW5nc1xEZXRhaWxzLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[E:/Lập trình web ASP/WoodenFuniturestore/WoodenFurnitureStore-/WoodenFuniturestore/Views/NguoiDungs/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmd1b2lEdW5nc1xFZGl0LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[E:/Lập trình web ASP/WoodenFuniturestore/WoodenFurnitureStore-/WoodenFuniturestore/Views/NguoiDungs/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmd1b2lEdW5nc1xJbmRleC5jc2h0bWw=
+[E:/Lập trình web ASP/WoodenFuniturestore/WoodenFurnitureStore-/WoodenFuniturestore/Views/NguoiDungs/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmd1b2lEdW5nc1xSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/Lập trình web ASP/WoodenFuniturestore/WoodenFurnitureStore-/WoodenFuniturestore/Views/SanPhamscustomer/Details.cshtml]
@@ -204,8 +208,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FuUGhhbXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[E:/Lập trình web ASP/WoodenFuniturestore/WoodenFurnitureStore-/WoodenFuniturestore/Views/Shared/Components/CartItem/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQ2FydEl0ZW1cRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/Lập trình web ASP/WoodenFuniturestore/WoodenFurnitureStore-/WoodenFuniturestore/Views/Shared/Components/DanhMucMenu/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcRGFuaE11Y01lbnVcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Lập trình web ASP/WoodenFuniturestore/WoodenFurnitureStore-/WoodenFuniturestore/Views/Shared/Components/KhuyenMaiMenu/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcS2h1eWVuTWFpTWVudVxEZWZhdWx0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/Lập trình web ASP/WoodenFuniturestore/WoodenFurnitureStore-/WoodenFuniturestore/Views/Shared/Error.cshtml]

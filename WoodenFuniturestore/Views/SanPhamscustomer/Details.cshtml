@@ -1,67 +1,238 @@
-﻿@model WoodenFuniturestore.Models.SanPham
+﻿@model WoodenFuniturestore.Models.SanPhamDetailViewModel
 
 @{
     ViewData["Title"] = "Chi tiết sản phẩm";
 }
 
+@{
+    var giaban = Model.SanPham.Gia - (Model.SanPham.Gia * (Model.SanPham.KhuyenMai.PhanTramGiam/100));
+}
 <div class="container my-5">
     <div class="row">
-
         <div class="col-md-7">
             <div class="row">
                 <div class="col-md-2 product-thumbnails">
-                    <img src="~/images/banghe1.jpg" alt="Thumbnail 1" class="img-fluid mb-2 border rounded">
+                    <img src="~/images/Product/@Model.SanPham.HinhAnh" alt="Thumbnail 1" class="img-fluid mb-2 border rounded">
                 </div>
-
                 <div class="col-md-10">
-                    <img src="~/images/banghe1.jpg" alt="@Model.TenSanPham" class="img-fluid rounded">
+                    <img src="~/images/Product/@Model.SanPham.HinhAnh" alt="@Model.SanPham.TenSanPham" class="img-fluid rounded">
                 </div>
-
             </div>
         </div> <div class="col-md-5 product-details">
-
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a asp-action="Index" asp-controller="Home">TRANG CHỦ</a></li>
-                    <li class="breadcrumb-item"><a asp-action="Index" asp-controller="SanPham">SẢN PHẨM</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">@Model.TenSanPham</li>
+                    <li class="breadcrumb-item"><a asp-action="Index" asp-controller="SanPhamscustomer">SẢN PHẨM</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">@Model.SanPham.TenSanPham</li>
                 </ol>
             </nav>
 
-            <h1 class="product-title">@Model.TenSanPham</h1>
-
+            <h1 class="product-title">@Model.SanPham.TenSanPham</h1>
+            @if(Model.SoLuongDanhGia>0){
+                for (int i = 1; i <= 5; i++)
+                {
+                    if (i <= Model.RatingTrungBinh)
+                    {
+                        <i class="fas fa-star text-warning"></i> 
+                    }
+                    else if (i - Model.RatingTrungBinh < 1)
+                    {
+                        <i class="fas fa-star-half-alt text-warning"></i> 
+                    }
+                    else
+                    {
+                        <i class="far fa-star text-warning"></i> 
+                    }
+                }
+            }
+            
             <div class="product-price my-3">
-                @Model.Gia.ToString("N0")đ
+                @giaban.ToString("N0")đ
             </div>
-
-            <form asp-controller="GioHangs" asp-action="ThemVaoGio" method="post">
-                <input type="hidden" asp-for="SanPhamId" />
-
-                <label class="form-label fw-bold">Số lượng:</label>
-                <div class="quantity-selector d-flex align-items-center border mb-3">
-                    <input type="number" name="name" value="" min="1" max="@Model.SoLuongTon"/>
+            @if(User.Identity.IsAuthenticated){
+                <form asp-controller="GioHangs" asp-action="AddToCart" method="post">
+                    @Html.AntiForgeryToken()
+                    <input type="hidden" name="sanPhamId" value="@Model.SanPham.SanPhamId">
+                    <label class="form-label fw-bold">Số lượng:</label>
+                    <input type="number" name="soLuong" value="" min="1" max="@Model.SanPham.SoLuongTon" placeholder="1" />
+                    <button type="submit" class="btn btn-dark w-100 btn-lg">
+                        Thêm vào giỏ
+                    </button>
+                </form>
+            }
+           else{
+                <div class="alert alert-warning" role="alert">
+                    Vui lòng đăng nhập để thêm sản phẩm vào giỏ hàng.
                 </div>
 
-                <button type="submit" class="btn btn-dark w-100 btn-lg">
-                    Thêm vào giỏ
-                </button>
-            </form>
-
+                <a asp-controller="NguoiDungs" asp-action="Login"
+                   asp-route-returnUrl="@(Context.Request.Path + Context.Request.QueryString)"
+                   class="btn btn-dark w-100 btn-lg">
+                    <i class="bi bi-box-arrow-in-right"></i> Đăng nhập để mua hàng
+                </a>
+           }
+            @if (TempData["CartSuccess"] != null)
+            {
+                <div class="alert alert-success mt-3">@TempData["CartSuccess"]</div>
+            }
+            @if (TempData["CartError"] != null)
+            {
+                <div class="alert alert-danger mt-3">@TempData["CartError"]</div>
+            }
             <a asp-action="Index" class="btn btn-outline-secondary w-100 mt-2">Quay lại danh sách</a>
 
 
             <div class="product-description mt-4">
                 <h6 class="fw-bold">MÔ TẢ CHI TIẾT</h6>
-                <p>@Model.MoTa</p>
+                <p>@Model.SanPham.MoTa</p>
                 <ul>
-                    <li><strong>Chất liệu:</strong> @Model.ChatLieu?.TenChatLieu</li>
-                    <li><strong>Kích thước:</strong> @Model.KichThuoc</li>
-                    <li><strong>Danh mục:</strong> @Model.DanhMuc?.TenDanhMuc</li>
-                    <li><strong>Số lượng còn:</strong> @Model.SoLuongTon</li>
+                    <li><strong>Chất liệu:</strong> @Model.SanPham.ChatLieu?.TenChatLieu</li>
+                    <li><strong>Kích thước:</strong> @Model.SanPham.KichThuoc</li>
+                    <li><strong>Danh mục:</strong> @Model.SanPham.DanhMuc?.TenDanhMuc</li>
+                    <li><strong>Số lượng còn:</strong> @Model.SanPham.SoLuongTon</li>
                 </ul>
             </div>
 
         </div>
     </div>
-</div> ```
+    <hr />
+</div>
+<div class="product-reviews-container">
+    <h3 class="mb-3">Đánh giá sản phẩm (@Model.SoLuongDanhGia)</h3>
 
+    @if (Model.SoLuongDanhGia>0)
+    {
+        <div class="average-rating mb-3">
+            <strong>Rating trung bình: @Model.RatingTrungBinh.ToString("0.0") / 5</strong>
+            <div class="stars">
+                @for (int i = 0; i < 5; i++)
+                {
+                    if (i+1 <= Model.RatingTrungBinh)
+                    {
+                        <i class="bi-star-fill" style="color: black"></i>
+                    }
+                    else if (i +1 - Model.RatingTrungBinh < 1)
+                    {
+                        <i class="bi-star-half" style="color: black"></i>
+                    }
+                    else
+                    {
+                        <i class="bi-star" style="color: black"></i>
+                    }
+                }
+            </div>
+        </div>
+    }
+    <div class="review-list">
+        @if (Model.SoLuongDanhGia > 0)
+        {
+            @foreach (var review in Model.DanhSachDanhGia)
+            {
+                <div class="review-item mb-4 pb-4 border-bottom">
+                    <div class="review-header d-flex justify-content-between">
+                        <strong>
+                          
+                            @(review.User?.HoTen ?? "User")
+                        </strong>
+                        <span class="text-muted">@review.NgayDanhGia?.ToString("dd/MM/yyyy")</span>
+                    </div>
+
+                    <div class="stars my-2">
+                        @for (int i = 0; i < 5; i++)
+                        {
+                            if (i + 1 <= review.Rating)
+                            {
+                                <i class="bi-star-fill" style="color: black"></i>
+                            }
+                            else if (i + 1 - review.Rating < 1)
+                            {
+                                <i class="bi-star-half" style="color: black"></i>
+                            }
+                            else
+                            {
+                                <i class="bi-star" style="color: black"></i>
+                            }
+                        }
+                    </div>
+
+                    <div class="review-body">
+                        <p>@review.NoiDung</p>
+                    </div>
+                </div>
+            }
+        }
+        else
+        {
+            <div class="alert alert-info">
+                Hiện chưa có đánh giá nào cho sản phẩm này.
+            </div>
+        }
+    </div>
+    <hr />
+</div>
+<h4>Sản phẩm liên quan </h4>
+<div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+    @foreach (var item in Model.SanPhamLienQuan)
+    {
+        <div class="col mb-5">
+            <a style="text-decoration: none" asp-controller="SanPhamscustomer" asp-action="Details" asp-route-id=@item.Id>
+                <div class="card h-100">
+                    <!-- Sale badge-->
+                    @{
+                        var gia = item.GiaBan.ToString("N0");
+                        var giagoc = item.GiaGoc.ToString("N0");
+                        var phanTramGiam = (int)Math.Round((item.GiaGoc - item.GiaBan) / item.GiaGoc * 100);
+                    }
+                    @if (phanTramGiam > 0)
+                    {
+                        <div class="badge bg-danger text-white position-absolute"
+                             style="top: 0.5rem; right: 0.5rem">
+                            -@phanTramGiam%
+                        </div>
+                    }
+                    <!-- Product image-->
+                    <div class="card h-100">
+                        <div class="product-image-wrapper">
+                            <img class="card-img-top" src="~/images/Product/@Html.DisplayFor(models=>item.HinhAnh)" alt="..." />
+                            <div class="product-overlay card-img-top">
+                                <div class="overlay-content">
+                                    <span>Xem chi tiết</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-align-left">
+                            <h6 style="color: black">@Html.DisplayFor(models => item.TenSanPham)</h6>
+                            <span style="color: red;">@gia đ</span>
+                            @if (phanTramGiam > 0)
+                            {
+                                <span class="text-muted text-decoration-line-through">@giagoc đ</span>
+                            }
+                            <div class="d-flex justify-content-start small text-warning mb-2">
+                                @for (int i = 0; i < 5; i++)
+                                {
+                                    if (i + 1 <= item.Rating)
+                                    {
+                                        <i class="bi-star-fill" style="color: black"></i>
+                                    }
+                                    else if (i + 1 - item.Rating < 1)
+                                    {
+                                        <i class="bi-star-half" style="color: black"></i>
+                                    }
+                                    else
+                                    {
+                                        <i class="bi-star" style="color: black"></i>
+                                    }
+                                }
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </a>
+        </div>
+    }
+</div>

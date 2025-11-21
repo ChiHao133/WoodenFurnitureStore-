@@ -535,3 +535,4 @@ E:\Lập trình web ASP\WoodenFuniturestore\WoodenFurnitureStore-\WoodenFuniture
 E:\Lập trình web ASP\WoodenFuniturestore\WoodenFurnitureStore-\WoodenFuniturestore\bin\Debug\net8.0\BCrypt.Net-Next.dll
 E:\Lập trình web ASP\WoodenFuniturestore\WoodenFurnitureStore-\WoodenFuniturestore\bin\Debug\net8.0\Microsoft.Extensions.ObjectPool.dll
 E:\Lập trình web ASP\WoodenFuniturestore\WoodenFurnitureStore-\WoodenFuniturestore\bin\Debug\net8.0\Microsoft.Extensions.WebEncoders.dll
+E:\Lập trình web ASP\WoodenFuniturestore\WoodenFurnitureStore-\WoodenFuniturestore\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
