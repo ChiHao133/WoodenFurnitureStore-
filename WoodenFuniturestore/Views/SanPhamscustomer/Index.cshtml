@@ -36,8 +36,6 @@
     .OrderBy(x => (x.GiaBan - x.GiaGoc) / x.GiaGoc))
     {
         <div class="col mb-5">
-
-            <a style="text-decoration: none" asp-area="" asp-controller="SanPhamscustomer" asp-action="Details" asp-route-id=@item.Id>
             <div class="card h-100">
                 <!-- Sale badge-->
                 @{
@@ -53,11 +51,11 @@
                 <!-- Product image-->
              
                     <div class="product-image-wrapper">
-                    
-                    <img class="card-img-top" src="~/images/banghe1.jpg" alt="..." />
+                        <img class="card-img-top" src="~/images/banghe1.jpg" alt="..." />
+
                         <div class="product-overlay card-img-top">
                             <div class="overlay-content">
-                            <span>Xem chi tiết</span>
+                                <span>Xem chi tiết</span>
                             </div>
                         </div>
                     </div>
@@ -65,7 +63,7 @@
                 <!-- Product details-->
                 <div class="card-body p-4">
                     <div class="text-align-left">
-                        <h6 style="color: black" class="">@Html.DisplayFor(models => item.TenSanPham)</h6>
+                        <h6 class="">@Html.DisplayFor(models => item.TenSanPham)</h6>
                         <span style="color: red;">@Html.DisplayFor(modelItem => item.GiaBan)đ</span>
                         <span class="text-muted text-decoration-line-through">@Html.DisplayFor(modelItem => item.GiaGoc)đ</span>
                         <div class="d-flex justify-content-start small text-warning mb-2">
@@ -86,7 +84,6 @@
                 </div>
 
             </div>
-            </a>
         </div>
     }
 </div>

@@ -1,16 +1,16 @@
 ﻿<Project>
   <ItemGroup>
-    <StaticWebAssetEndpoint Include="_content/WoodenFuniturestore/css/site.2oniwfg43l.css">
+    <StaticWebAssetEndpoint Include="_content/WoodenFuniturestore/css/site.53ni8uhcuz.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"2oniwfg43l"},{"Name":"integrity","Value":"sha256-UgQC1Vw2ZYJZbvavkpquo3\u002BcxSC3ptZamM1Vxi2v1\u002B4="},{"Name":"label","Value":"_content/WoodenFuniturestore/css/site.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"4277"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022UgQC1Vw2ZYJZbvavkpquo3\u002BcxSC3ptZamM1Vxi2v1\u002B4=\u0022"},{"Name":"Last-Modified","Value":"Sat, 08 Nov 2025 08:18:22 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"53ni8uhcuz"},{"Name":"integrity","Value":"sha256-YZUu3Fj7lYhsb2gWEfEcJBuXGsDyKA80WOlCy8j4gr8="},{"Name":"label","Value":"_content/WoodenFuniturestore/css/site.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2092"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022YZUu3Fj7lYhsb2gWEfEcJBuXGsDyKA80WOlCy8j4gr8=\u0022"},{"Name":"Last-Modified","Value":"Fri, 07 Nov 2025 06:29:50 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/WoodenFuniturestore/css/site.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-UgQC1Vw2ZYJZbvavkpquo3\u002BcxSC3ptZamM1Vxi2v1\u002B4="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"4277"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022UgQC1Vw2ZYJZbvavkpquo3\u002BcxSC3ptZamM1Vxi2v1\u002B4=\u0022"},{"Name":"Last-Modified","Value":"Sat, 08 Nov 2025 08:18:22 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-YZUu3Fj7lYhsb2gWEfEcJBuXGsDyKA80WOlCy8j4gr8="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"2092"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022YZUu3Fj7lYhsb2gWEfEcJBuXGsDyKA80WOlCy8j4gr8=\u0022"},{"Name":"Last-Modified","Value":"Fri, 07 Nov 2025 06:29:50 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/WoodenFuniturestore/favicon.61n19gt1b8.ico">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\favicon.ico'))</AssetFile>
