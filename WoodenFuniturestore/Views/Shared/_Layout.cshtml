@@ -123,8 +123,7 @@
                                 Khuyến mãi
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownKhuyenMai">
-                                <li><a class="dropdown-item" href="#">Khuyến mãi 1</a></li>
-                                <li><a class="dropdown-item" href="#">Khuyến mãi 2</a></li>
+                                @await Component.InvokeAsync("KhuyenMaiMenu")
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
@@ -230,6 +229,7 @@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

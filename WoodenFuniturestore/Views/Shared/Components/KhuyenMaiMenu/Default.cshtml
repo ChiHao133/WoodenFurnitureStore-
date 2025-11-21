@@ -1,0 +1,18 @@
+﻿@model IEnumerable<WoodenFuniturestore.Models.KhuyenMai>
+
+@foreach (var item in Model)
+{
+    <li>
+        <a class="dropdown-item"
+           asp-controller="KhuyenMais"
+           asp-action="Index"
+           asp-route-KhuyenMaiId="@item.KhuyenMaiId">@item.TenSuKien</a>
+    </li>
+}
+
+<li><hr class="dropdown-divider"></li>
+<li>
+    <a class="dropdown-item" asp-controller="KhuyenMais" asp-action="Index">
+        Xem tất cả khuyến mãi
+    </a>
+</li>

@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using WoodenFuniturestore.Data;
 using WoodenFuniturestore.Models;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 
 namespace WoodenFuniturestore.Controllers
 {
@@ -20,9 +21,35 @@ namespace WoodenFuniturestore.Controllers
         }
 
         // GET: KhuyenMais
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(int KhuyenMaiId=0)
         {
-            return View(await _context.KhuyenMais.ToListAsync());
+            var query = _context.SanPhams.Include(sa=>sa.KhuyenMai).AsQueryable();
+            if(KhuyenMaiId == 0)
+            {
+                query = query.Where(s=>s.KhuyenMaiId != null);
+            }
+            else {
+                query = query.Where(p => p.KhuyenMaiId == KhuyenMaiId);
+            }
+
+            var sanpham = await query
+                .Select(sp => new SanPhamsViewModel
+                {
+                    Id = sp.SanPhamId,
+                    TenSanPham = sp.TenSanPham,
+                    HinhAnh = sp.HinhAnh,
+                    GiaGoc = sp.Gia,
+                    danhMuc = sp.DanhMucId,
+                    GiaBan = (sp.KhuyenMai != null && sp.KhuyenMai.PhanTramGiam > 0)
+                                ? (sp.Gia - (sp.Gia * sp.KhuyenMai.PhanTramGiam / 100))
+                                : sp.Gia,
+                    Rating = _context.DanhGia
+                        .Where(dg => dg.SanPhamId == sp.SanPhamId && dg.IsDuyet == true)
+                        .Average(dg => (double?)dg.Rating) ?? 0,
+                    PhanTramGiam = sp.KhuyenMai.PhanTramGiam
+                })
+                .ToListAsync();
+            return View(sanpham);
         }
 
         // GET: KhuyenMais/Details/5

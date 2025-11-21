@@ -49,16 +49,28 @@
             <div class="product-price my-3">
                 @giaban.ToString("N0")đ
             </div>
+            @if(User.Identity.IsAuthenticated){
+                <form asp-controller="GioHangs" asp-action="AddToCart" method="post">
+                    @Html.AntiForgeryToken()
+                    <input type="hidden" name="sanPhamId" value="@Model.SanPham.SanPhamId">
+                    <label class="form-label fw-bold">Số lượng:</label>
+                    <input type="number" name="soLuong" value="" min="1" max="@Model.SanPham.SoLuongTon" placeholder="1" />
+                    <button type="submit" class="btn btn-dark w-100 btn-lg">
+                        Thêm vào giỏ
+                    </button>
+                </form>
+            }
+           else{
+                <div class="alert alert-warning" role="alert">
+                    Vui lòng đăng nhập để thêm sản phẩm vào giỏ hàng.
+                </div>
 
-            <form asp-controller="GioHangs" asp-action="AddToCart" method="post">
-                @Html.AntiForgeryToken()
-                <input type="hidden" name="sanPhamId" value="@Model.SanPham.SanPhamId">
-                <label class="form-label fw-bold">Số lượng:</label>
-                <input type="number" name="name2" value="" min="1" max="@Model.SanPham.SoLuongTon" />
-                <button type="submit" class="btn btn-dark w-100 btn-lg">
-                    Thêm vào giỏ
-                </button>
-            </form>
+                <a asp-controller="NguoiDungs" asp-action="Login"
+                   asp-route-returnUrl="@(Context.Request.Path + Context.Request.QueryString)"
+                   class="btn btn-dark w-100 btn-lg">
+                    <i class="bi bi-box-arrow-in-right"></i> Đăng nhập để mua hàng
+                </a>
+           }
             @if (TempData["CartSuccess"] != null)
             {
                 <div class="alert alert-success mt-3">@TempData["CartSuccess"]</div>

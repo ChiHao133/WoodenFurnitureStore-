@@ -1,0 +1,24 @@
+﻿@{
+    ViewData["Title"] = "Đặt hàng thành công";
+    var donHangID = ViewBag.DonHangID;
+}
+
+<div class="container mt-5 text-center">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <div class="card shadow-sm">
+                <div class="card-body p-5">
+                    <i class="bi bi-check-circle-fill text-success" style="font-size: 5rem;"></i>
+                    <h1 class="mt-3">Cảm ơn bạn!</h1>
+                    <p class="lead">Đơn hàng của bạn đã được đặt thành công.</p>
+                    <p>Mã đơn hàng của bạn là: <strong class="text-primary">#@donHangID</strong></p>
+                    <p>Chúng tôi sẽ liên hệ với bạn sớm nhất để xác nhận đơn hàng.</p>
+                    <hr>
+                    <a asp-controller="Home" asp-action="Index" class="btn btn-primary mt-3">
+                        <i class="bi bi-arrow-left"></i> Tiếp tục mua sắm
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
