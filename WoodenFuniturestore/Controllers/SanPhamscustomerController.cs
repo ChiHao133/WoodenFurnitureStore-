@@ -57,11 +57,13 @@ namespace WoodenFuniturestore.Controllers
                     TenSanPham = sp.TenSanPham,
                     HinhAnh = sp.HinhAnh,
                     GiaGoc = sp.Gia, 
+                    danhMuc=sp.DanhMucId,
                     GiaBan = (sp.KhuyenMai != null && sp.KhuyenMai.PhanTramGiam > 0)
                                 ? (sp.Gia - (sp.Gia * sp.KhuyenMai.PhanTramGiam / 100))
                                 : sp.Gia, Rating = _context.DanhGia
                         .Where(dg => dg.SanPhamId == sp.SanPhamId && dg.IsDuyet == true)
-                        .Average(dg => (double?)dg.Rating) ?? 0
+                        .Average(dg => (double?)dg.Rating) ?? 0,
+                    PhanTramGiam=sp.KhuyenMai.PhanTramGiam
                 })
                 .ToListAsync();
 
@@ -204,8 +206,56 @@ namespace WoodenFuniturestore.Controllers
             {
                 return NotFound();
             }
+            var query = await _context.SanPhams
+                .Where(sp => sp.DanhMucId == sanPham.DanhMucId && sp.SanPhamId != id)
+                .Select(sp => new SanPhamsViewModel
+                {
+                    Id = sp.SanPhamId,
+                    TenSanPham = sp.TenSanPham,
+                    HinhAnh = sp.HinhAnh,
+                    GiaGoc = sp.Gia,
+                    danhMuc = sp.DanhMucId,
+                    GiaBan = (sp.KhuyenMai != null && sp.KhuyenMai.PhanTramGiam > 0)
+                                ? (sp.Gia - (sp.Gia * sp.KhuyenMai.PhanTramGiam / 100))
+                                : sp.Gia,
+                    Rating = _context.DanhGia
+                        .Where(dg => dg.SanPhamId == sp.SanPhamId && dg.IsDuyet == true)
+                        .Average(dg => (double?)dg.Rating) ?? 0,
+                    PhanTramGiam=sp.KhuyenMai.PhanTramGiam
+                })
+                .Take(4)
+                .ToListAsync();
+            var danhSachDanhGia = await _context.DanhGia
+                .Where(dg => dg.SanPhamId == id )
+                .OrderByDescending(dg => dg.NgayDanhGia) 
+                .ToListAsync();
+            double ratingTrungBinh = 0;
 
-            return View(sanPham);
+            if (danhSachDanhGia!=null)
+            {
+                int index = 0;
+                for(int i=0;i<danhSachDanhGia.Count;i++)
+                {
+                    if (danhSachDanhGia[i].Rating!=null)
+                    {
+                        ratingTrungBinh += (double)danhSachDanhGia[i].Rating;
+                        index++;
+                    }    
+                }
+                if (index != 0)
+                {
+                    ratingTrungBinh = ratingTrungBinh / index;
+                }
+            }
+            var viewModel = new SanPhamDetailViewModel
+            {
+                SanPham = sanPham,
+                SanPhamLienQuan = query,
+                DanhSachDanhGia = danhSachDanhGia,
+                RatingTrungBinh = ratingTrungBinh,
+                SoLuongDanhGia = danhSachDanhGia.Count
+            };
+            return View(viewModel);
         }
 
         private bool SanPhamExists(int id)

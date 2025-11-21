@@ -43,8 +43,30 @@ namespace WoodenFuniturestore.Controllers
             {
                 return NotFound();
             }
-
-            return View(sanPham);
+            var query = await _context.SanPhams
+                .Where(sp => sp.DanhMucId == sanPham.DanhMucId && sp.SanPhamId != id)
+                .Select(sp => new SanPhamsViewModel
+                {
+                    Id = sp.SanPhamId,
+                    TenSanPham = sp.TenSanPham,
+                    HinhAnh = sp.HinhAnh,
+                    GiaGoc = sp.Gia,
+                    danhMuc = sp.DanhMucId,
+                    GiaBan = (sp.KhuyenMai != null && sp.KhuyenMai.PhanTramGiam > 0)
+                                ? (sp.Gia - (sp.Gia * sp.KhuyenMai.PhanTramGiam / 100))
+                                : sp.Gia,
+                    Rating = _context.DanhGia
+                        .Where(dg => dg.SanPhamId == sp.SanPhamId && dg.IsDuyet == true)
+                        .Average(dg => (double?)dg.Rating) ?? 0
+                })
+                .Take(4)
+                .ToListAsync();
+            var viewModel = new SanPhamDetailViewModel
+            {
+                SanPham = sanPham,
+                SanPhamLienQuan = query
+            };
+            return View(viewModel);
         }
 
         // GET: SanPhams/Create

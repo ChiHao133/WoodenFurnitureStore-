@@ -36,47 +36,53 @@
     .OrderBy(x => (x.GiaBan - x.GiaGoc) / x.GiaGoc))
     {
         <div class="col mb-5">
-            <div class="card h-100">
-                <!-- Sale badge-->
-                @{
-                    var phanTramGiam = (int)Math.Round((item.GiaGoc - item.GiaBan) / item.GiaGoc * 100);
-                }
-                @if (phanTramGiam > 0)
+
+            <a style="text-decoration: none" asp-area="" asp-controller="SanPhamscustomer" asp-action="Details" asp-route-id=@item.Id>
+                <div class="card h-100">
+                    <!-- Sale badge-->
+                    @{
+                        var giaban = item.GiaBan.ToString("N0");
+                       
+                        var giagoc = item.GiaGoc.ToString("N0");
+                    }
+                @if ((item.GiaGoc-item.GiaBan)>0)
                 {
                     <div class="badge bg-danger text-white position-absolute"
                          style="top: 0.5rem; right: 0.5rem">
-                        -@phanTramGiam%
+                        -@item.PhanTramGiam %
                     </div>
                 }
                 <!-- Product image-->
              
                     <div class="product-image-wrapper">
-                        <img class="card-img-top" src="~/images/banghe1.jpg" alt="..." />
-
-                        <div class="product-overlay card-img-top">
-                            <div class="overlay-content">
+                        <img class="card-img-top" src="~/images/Product/@Html.DisplayFor(models=>item.HinhAnh)" alt="..." />
+                            <div class="product-overlay card-img-top">
+                                <div class="overlay-content">
                                 <span>Xem chi tiết</span>
+                                </div>
                             </div>
-                        </div>
                     </div>
-               
                 <!-- Product details-->
                 <div class="card-body p-4">
                     <div class="text-align-left">
-                        <h6 class="">@Html.DisplayFor(models => item.TenSanPham)</h6>
-                        <span style="color: red;">@Html.DisplayFor(modelItem => item.GiaBan)đ</span>
-                        <span class="text-muted text-decoration-line-through">@Html.DisplayFor(modelItem => item.GiaGoc)đ</span>
+                        <h6 style="color: black" class="">@item.TenSanPham</h6>
+                        <span style="color: red;">@giaban đ</span>
+                        <span class="text-muted text-decoration-line-through">@giagoc đ</span>
                         <div class="d-flex justify-content-start small text-warning mb-2">
                             @for (int i = 0; i < 5; i++)
                             {
-                                if (i + 1 <= item.Rating)
-                                {
-                                    <div class="bi-star-fill"></div>
-                                }
-                                else
-                                {
-                                    <div class="bi-star"></div>
-                                }
+                                    if (i+1 <= item.Rating)
+                                    {
+                                        <i class="bi-star-fill" style="color: black"></i>
+                                    }
+                                    else if (i+1 - item.Rating < 1)
+                                    {
+                                        <i class="bi-star-half" style="color: black"></i>
+                                    }
+                                    else
+                                    {
+                                        <i class="bi-star" style="color: black"></i>
+                                    }
                             }
                         </div>
 
@@ -84,6 +90,7 @@
                 </div>
 
             </div>
+            </a>
         </div>
     }
 </div>

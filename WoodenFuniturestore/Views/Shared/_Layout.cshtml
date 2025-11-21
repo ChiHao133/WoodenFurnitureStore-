@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿@using System.Security.Claims
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -33,22 +34,69 @@
                     </form>
                     <div class="d-flex align-items-center gap-3">
                         <div class="d-flex align-items-center gap-1 dropdown">
+
                             <a href="#" class="text-dark text-decoration-none d-flex align-items-center gap-1" data-bs-toggle="dropdown" aria-expanded="false">
                                 <i class="bi bi-person-circle" style="font-size: 1.5rem"></i>
-                                <div class="d-none d-lg-inline">
-                                    <span class="d-block" style="line-height: 1.2;">Đăng nhập / Đăng ký</span>
-                                    <small class="d-block text-muted" style="line-height: 1.2;">Tài khoản của tôi <i class="bi bi-chevron-down" style="font-size: 0.7rem;"></i></small>
-                                </div>
+
+                                @if (User.Identity.IsAuthenticated)
+                                {
+                                    <span class="d-none d-lg-inline">@User.FindFirstValue(ClaimTypes.Name)</span>
+                                }
+                                else
+                                {
+                                    <span class="d-none d-lg-inline">Tài khoản</span>
+                                }
+                                <i class="bi bi-chevron-down d-none d-lg-inline" style="font-size: 0.7rem;"></i>
                             </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Đăng nhập</a></li>
-                                <li><a class="dropdown-item" href="#">Đăng ký</a></li>
-                                <li><a class="dropdown-item" href="#">Tài khoản của tôi</a></li>
+
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
+                                @if (User.Identity.IsAuthenticated)
+                                {
+                                    <li>
+                                        <span class="dropdown-item-text">
+                                            Đăng nhập bởi: <br> <strong>@User.FindFirstValue(ClaimTypes.Name)</strong>
+                                        </span>
+                                    </li>
+
+                                    @if (User.IsInRole("Admin"))
+                                    {
+                                        <li>
+                                            <a class="dropdown-item" asp-area="Admin" asp-controller="Home" asp-action="Index">
+                                                <i class="bi bi-speedometer2 me-2"></i>Trang quản lý
+                                            </a>
+                                        </li>
+                                    }
+
+                                    <li><a class="dropdown-item" href="#"><i class="bi bi-person-fill me-2"></i>Tài khoản của tôi</a></li>
+                                    <li><a class="dropdown-item" href="#"><i class="bi bi-box-seam me-2"></i>Đơn hàng</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li>
+                                        <form asp-controller="NguoiDungs" asp-action="Logout" method="post">
+                                            @Html.AntiForgeryToken()
+                                            <button type="submit" class="dropdown-item">
+                                                <i class="bi bi-box-arrow-right me-2"></i>Đăng xuất
+                                            </button>
+                                        </form>
+                                    </li>
+                                }
+                                else
+                                {
+                                    <li>
+                                        <a class="dropdown-item" asp-controller="NguoiDungs" asp-action="Login">
+                                            <i class="bi bi-box-arrow-in-right me-2"></i>Đăng nhập
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" asp-controller="NguoiDungs" asp-action="Register">
+                                            <i class="bi bi-person-plus-fill me-2"></i>Đăng ký
+                                        </a>
+                                    </li>
+                                }
                             </ul>
-                        </div>
-                        <a href="#" class="text-dark text-decoration-none d-flex align-items-center gap-1">
+                        </div>                        
+                        <a asp-controller="GioHangs" asp-action="Index" class="text-dark text-decoration-none d-flex align-items-center gap-1">
                             <i class="bi bi-bag" style="font-size: 1.5rem"></i>
-                            <sup><span class="badge bg-danger text-white ms-1 rounded-pill">0</span></sup>
+                            @await Component.InvokeAsync("CartItem")
                             <span class="d-none d-lg-inline">Giỏ hàng</span>
                         </a>
                     </div>

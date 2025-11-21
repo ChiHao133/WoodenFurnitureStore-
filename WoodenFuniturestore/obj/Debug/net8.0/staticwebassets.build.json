@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "nbuomXSLUiNkB0uB9xZ7XY8fP90VXN4+eAwAld8LewE=",
+  "Hash": "ny/UhwBi0qufQWc7cSPy6G5iYNfFgtaQrrmZNaG02jc=",
   "Source": "WoodenFuniturestore",
   "BasePath": "_content/WoodenFuniturestore",
   "Mode": "Default",
@@ -73,8 +73,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "53ni8uhcuz",
-      "Integrity": "YZUu3Fj7lYhsb2gWEfEcJBuXGsDyKA80WOlCy8j4gr8=",
+      "Fingerprint": "8nhndagvbl",
+      "Integrity": "FA6C5+CmjLlZ5TpAObNNlDUsJRd/fOLYxFO8ZGBt7pw=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
@@ -372,6 +372,321 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\logo.png"
+    },
+    {
+      "Identity": "E:\\Lập trình web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\wwwroot\\images\\Product\\banan.jpg",
+      "SourceId": "WoodenFuniturestore",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Lập trình web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\wwwroot\\",
+      "BasePath": "_content/WoodenFuniturestore",
+      "RelativePath": "images/Product/banan#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "9rd1v4yrcs",
+      "Integrity": "5eoSoLC2c8s2AF+iqkN6MzhCVnLH4ahghTHALoYjVCQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Product\\banan.jpg"
+    },
+    {
+      "Identity": "E:\\Lập trình web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\wwwroot\\images\\Product\\banchansat.jpg",
+      "SourceId": "WoodenFuniturestore",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Lập trình web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\wwwroot\\",
+      "BasePath": "_content/WoodenFuniturestore",
+      "RelativePath": "images/Product/banchansat#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "cdfkyyvd3b",
+      "Integrity": "0OS6f49/RlICl797iXkai7oV9OkO8ujd6az1zhi5dDI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Product\\banchansat.jpg"
+    },
+    {
+      "Identity": "E:\\Lập trình web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\wwwroot\\images\\Product\\bangapgon.jpg",
+      "SourceId": "WoodenFuniturestore",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Lập trình web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\wwwroot\\",
+      "BasePath": "_content/WoodenFuniturestore",
+      "RelativePath": "images/Product/bangapgon#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "6qmyw3x3ag",
+      "Integrity": "joOiZw4JIhpgwS1T5BEFMmIDOPryjz1hsJnHiuXx8gY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Product\\bangapgon.jpg"
+    },
+    {
+      "Identity": "E:\\Lập trình web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\wwwroot\\images\\Product\\banhocsinh.jpg",
+      "SourceId": "WoodenFuniturestore",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Lập trình web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\wwwroot\\",
+      "BasePath": "_content/WoodenFuniturestore",
+      "RelativePath": "images/Product/banhocsinh#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "yejja1ff4y",
+      "Integrity": "CoesvphPLkgqTyVd0MHBnjkGQwOBV+XpGrOymnTsN6A=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Product\\banhocsinh.jpg"
+    },
+    {
+      "Identity": "E:\\Lập trình web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\wwwroot\\images\\Product\\bantra.jpg",
+      "SourceId": "WoodenFuniturestore",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Lập trình web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\wwwroot\\",
+      "BasePath": "_content/WoodenFuniturestore",
+      "RelativePath": "images/Product/bantra#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "8m3hvvlai4",
+      "Integrity": "cKiiY+pbwrDsRG4sA7oPy4duZ/aV/cWet3ZbXVlTSeM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Product\\bantra.jpg"
+    },
+    {
+      "Identity": "E:\\Lập trình web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\wwwroot\\images\\Product\\gheanngo.jpg",
+      "SourceId": "WoodenFuniturestore",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Lập trình web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\wwwroot\\",
+      "BasePath": "_content/WoodenFuniturestore",
+      "RelativePath": "images/Product/gheanngo#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "orndwu8c5h",
+      "Integrity": "bG4mNQp70rHPk4gMpFE4URh2MaepGhxa4x0zbmsEicI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Product\\gheanngo.jpg"
+    },
+    {
+      "Identity": "E:\\Lập trình web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\wwwroot\\images\\Product\\ghebapbenh.jpg",
+      "SourceId": "WoodenFuniturestore",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Lập trình web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\wwwroot\\",
+      "BasePath": "_content/WoodenFuniturestore",
+      "RelativePath": "images/Product/ghebapbenh#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "7m7ar8nudb",
+      "Integrity": "8a8wXxR+Aqe2l/oDGEgF8Wq79op2APXGzoSTs7K8fZA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Product\\ghebapbenh.jpg"
+    },
+    {
+      "Identity": "E:\\Lập trình web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\wwwroot\\images\\Product\\ghedon.jpg",
+      "SourceId": "WoodenFuniturestore",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Lập trình web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\wwwroot\\",
+      "BasePath": "_content/WoodenFuniturestore",
+      "RelativePath": "images/Product/ghedon#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "rqj8on7rnr",
+      "Integrity": "DeYQzfpbP8bASpQJljL0OewpSqZvy9OMPjhWFwp+co4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Product\\ghedon.jpg"
+    },
+    {
+      "Identity": "E:\\Lập trình web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\wwwroot\\images\\Product\\ghesofadon.jpg",
+      "SourceId": "WoodenFuniturestore",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Lập trình web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\wwwroot\\",
+      "BasePath": "_content/WoodenFuniturestore",
+      "RelativePath": "images/Product/ghesofadon#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "hqj8qh34v1",
+      "Integrity": "F3zxSP1fqZCrIfvvJ0DtNv6SOovir79MvnYYuoQBJs4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Product\\ghesofadon.jpg"
+    },
+    {
+      "Identity": "E:\\Lập trình web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\wwwroot\\images\\Product\\ghethugian.jpg",
+      "SourceId": "WoodenFuniturestore",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Lập trình web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\wwwroot\\",
+      "BasePath": "_content/WoodenFuniturestore",
+      "RelativePath": "images/Product/ghethugian#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "7egcupa88k",
+      "Integrity": "/1/Ebk+gpr5D6CQgWgAj4wSKe/euyXQS1ePhh+ZdApQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Product\\ghethugian.jpg"
+    },
+    {
+      "Identity": "E:\\Lập trình web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\wwwroot\\images\\Product\\tudaugiuong.jpg",
+      "SourceId": "WoodenFuniturestore",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Lập trình web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\wwwroot\\",
+      "BasePath": "_content/WoodenFuniturestore",
+      "RelativePath": "images/Product/tudaugiuong#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "lhy3zowe18",
+      "Integrity": "p0vCzN6NYuuEH0gacBqQAp9qeJzfiWTVF1gnrcMWXUI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Product\\tudaugiuong.jpg"
+    },
+    {
+      "Identity": "E:\\Lập trình web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\wwwroot\\images\\Product\\tugiay.jpg",
+      "SourceId": "WoodenFuniturestore",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Lập trình web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\wwwroot\\",
+      "BasePath": "_content/WoodenFuniturestore",
+      "RelativePath": "images/Product/tugiay#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "pxdp8b88bh",
+      "Integrity": "zab9+sC3iJU87uOaXnWFQNnbuVhtBrs9vpiKZKVQVtM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Product\\tugiay.jpg"
+    },
+    {
+      "Identity": "E:\\Lập trình web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\wwwroot\\images\\Product\\tuquanao.jpg",
+      "SourceId": "WoodenFuniturestore",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Lập trình web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\wwwroot\\",
+      "BasePath": "_content/WoodenFuniturestore",
+      "RelativePath": "images/Product/tuquanao#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "93nofxew30",
+      "Integrity": "GwLB5iZULwjRId88cWle7UssaiKRCXEEny0vX/j76wU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Product\\tuquanao.jpg"
+    },
+    {
+      "Identity": "E:\\Lập trình web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\wwwroot\\images\\Product\\tusach.jpg",
+      "SourceId": "WoodenFuniturestore",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Lập trình web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\wwwroot\\",
+      "BasePath": "_content/WoodenFuniturestore",
+      "RelativePath": "images/Product/tusach#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "5pkkgb76vi",
+      "Integrity": "ybGT0pwjAH9oLKu/NcW52TTBBP6P1UZEPgGz0pq03a0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Product\\tusach.jpg"
+    },
+    {
+      "Identity": "E:\\Lập trình web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\wwwroot\\images\\Product\\tutrangtri.jpg",
+      "SourceId": "WoodenFuniturestore",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Lập trình web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\wwwroot\\",
+      "BasePath": "_content/WoodenFuniturestore",
+      "RelativePath": "images/Product/tutrangtri#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "w8cv6rfx7t",
+      "Integrity": "QG7t/tO8CW3sm60BjJve5c9JR1HbiMNgsOYxnLPpBVU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Product\\tutrangtri.jpg"
     },
     {
       "Identity": "E:\\Lập trình web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\wwwroot\\images\\sofa1.jpg",
@@ -1720,7 +2035,7 @@
   ],
   "Endpoints": [
     {
-      "Route": "css/site.53ni8uhcuz.css",
+      "Route": "css/site.8nhndagvbl.css",
       "AssetFile": "E:\\Lập trình web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\wwwroot\\css\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -1730,7 +2045,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2092"
+          "Value": "4218"
         },
         {
           "Name": "Content-Type",
@@ -1738,11 +2053,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"YZUu3Fj7lYhsb2gWEfEcJBuXGsDyKA80WOlCy8j4gr8=\""
+          "Value": "\"FA6C5+CmjLlZ5TpAObNNlDUsJRd/fOLYxFO8ZGBt7pw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 07 Nov 2025 06:29:50 GMT"
+          "Value": "Wed, 12 Nov 2025 08:43:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1752,7 +2067,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "53ni8uhcuz"
+          "Value": "8nhndagvbl"
         },
         {
           "Name": "label",
@@ -1760,7 +2075,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-YZUu3Fj7lYhsb2gWEfEcJBuXGsDyKA80WOlCy8j4gr8="
+          "Value": "sha256-FA6C5+CmjLlZ5TpAObNNlDUsJRd/fOLYxFO8ZGBt7pw="
         }
       ]
     },
@@ -1775,7 +2090,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2092"
+          "Value": "4218"
         },
         {
           "Name": "Content-Type",
@@ -1783,11 +2098,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"YZUu3Fj7lYhsb2gWEfEcJBuXGsDyKA80WOlCy8j4gr8=\""
+          "Value": "\"FA6C5+CmjLlZ5TpAObNNlDUsJRd/fOLYxFO8ZGBt7pw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 07 Nov 2025 06:29:50 GMT"
+          "Value": "Wed, 12 Nov 2025 08:43:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1797,7 +2112,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-YZUu3Fj7lYhsb2gWEfEcJBuXGsDyKA80WOlCy8j4gr8="
+          "Value": "sha256-FA6C5+CmjLlZ5TpAObNNlDUsJRd/fOLYxFO8ZGBt7pw="
         }
       ]
     },
@@ -2946,6 +3261,1236 @@
         {
           "Name": "integrity",
           "Value": "sha256-dhx+HP9YsJWsrZlmbL2ksbOASY/Uu4Bd9UZxsQVda74="
+        }
+      ]
+    },
+    {
+      "Route": "images/Product/banan.9rd1v4yrcs.jpg",
+      "AssetFile": "E:\\Lập trình web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\wwwroot\\images\\Product\\banan.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "18596"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5eoSoLC2c8s2AF+iqkN6MzhCVnLH4ahghTHALoYjVCQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Nov 2025 06:25:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "9rd1v4yrcs"
+        },
+        {
+          "Name": "label",
+          "Value": "images/Product/banan.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-5eoSoLC2c8s2AF+iqkN6MzhCVnLH4ahghTHALoYjVCQ="
+        }
+      ]
+    },
+    {
+      "Route": "images/Product/banan.jpg",
+      "AssetFile": "E:\\Lập trình web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\wwwroot\\images\\Product\\banan.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "18596"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5eoSoLC2c8s2AF+iqkN6MzhCVnLH4ahghTHALoYjVCQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Nov 2025 06:25:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-5eoSoLC2c8s2AF+iqkN6MzhCVnLH4ahghTHALoYjVCQ="
+        }
+      ]
+    },
+    {
+      "Route": "images/Product/banchansat.cdfkyyvd3b.jpg",
+      "AssetFile": "E:\\Lập trình web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\wwwroot\\images\\Product\\banchansat.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "104668"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0OS6f49/RlICl797iXkai7oV9OkO8ujd6az1zhi5dDI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Nov 2025 06:34:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "cdfkyyvd3b"
+        },
+        {
+          "Name": "label",
+          "Value": "images/Product/banchansat.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-0OS6f49/RlICl797iXkai7oV9OkO8ujd6az1zhi5dDI="
+        }
+      ]
+    },
+    {
+      "Route": "images/Product/banchansat.jpg",
+      "AssetFile": "E:\\Lập trình web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\wwwroot\\images\\Product\\banchansat.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "104668"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0OS6f49/RlICl797iXkai7oV9OkO8ujd6az1zhi5dDI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Nov 2025 06:34:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-0OS6f49/RlICl797iXkai7oV9OkO8ujd6az1zhi5dDI="
+        }
+      ]
+    },
+    {
+      "Route": "images/Product/bangapgon.6qmyw3x3ag.jpg",
+      "AssetFile": "E:\\Lập trình web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\wwwroot\\images\\Product\\bangapgon.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "180174"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"joOiZw4JIhpgwS1T5BEFMmIDOPryjz1hsJnHiuXx8gY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Nov 2025 06:39:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6qmyw3x3ag"
+        },
+        {
+          "Name": "label",
+          "Value": "images/Product/bangapgon.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-joOiZw4JIhpgwS1T5BEFMmIDOPryjz1hsJnHiuXx8gY="
+        }
+      ]
+    },
+    {
+      "Route": "images/Product/bangapgon.jpg",
+      "AssetFile": "E:\\Lập trình web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\wwwroot\\images\\Product\\bangapgon.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "180174"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"joOiZw4JIhpgwS1T5BEFMmIDOPryjz1hsJnHiuXx8gY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Nov 2025 06:39:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-joOiZw4JIhpgwS1T5BEFMmIDOPryjz1hsJnHiuXx8gY="
+        }
+      ]
+    },
+    {
+      "Route": "images/Product/banhocsinh.jpg",
+      "AssetFile": "E:\\Lập trình web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\wwwroot\\images\\Product\\banhocsinh.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "150743"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CoesvphPLkgqTyVd0MHBnjkGQwOBV+XpGrOymnTsN6A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Nov 2025 06:27:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-CoesvphPLkgqTyVd0MHBnjkGQwOBV+XpGrOymnTsN6A="
+        }
+      ]
+    },
+    {
+      "Route": "images/Product/banhocsinh.yejja1ff4y.jpg",
+      "AssetFile": "E:\\Lập trình web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\wwwroot\\images\\Product\\banhocsinh.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "150743"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CoesvphPLkgqTyVd0MHBnjkGQwOBV+XpGrOymnTsN6A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Nov 2025 06:27:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "yejja1ff4y"
+        },
+        {
+          "Name": "label",
+          "Value": "images/Product/banhocsinh.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-CoesvphPLkgqTyVd0MHBnjkGQwOBV+XpGrOymnTsN6A="
+        }
+      ]
+    },
+    {
+      "Route": "images/Product/bantra.8m3hvvlai4.jpg",
+      "AssetFile": "E:\\Lập trình web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\wwwroot\\images\\Product\\bantra.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "64846"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cKiiY+pbwrDsRG4sA7oPy4duZ/aV/cWet3ZbXVlTSeM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Nov 2025 06:30:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8m3hvvlai4"
+        },
+        {
+          "Name": "label",
+          "Value": "images/Product/bantra.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-cKiiY+pbwrDsRG4sA7oPy4duZ/aV/cWet3ZbXVlTSeM="
+        }
+      ]
+    },
+    {
+      "Route": "images/Product/bantra.jpg",
+      "AssetFile": "E:\\Lập trình web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\wwwroot\\images\\Product\\bantra.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "64846"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cKiiY+pbwrDsRG4sA7oPy4duZ/aV/cWet3ZbXVlTSeM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Nov 2025 06:30:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-cKiiY+pbwrDsRG4sA7oPy4duZ/aV/cWet3ZbXVlTSeM="
+        }
+      ]
+    },
+    {
+      "Route": "images/Product/gheanngo.jpg",
+      "AssetFile": "E:\\Lập trình web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\wwwroot\\images\\Product\\gheanngo.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "35160"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bG4mNQp70rHPk4gMpFE4URh2MaepGhxa4x0zbmsEicI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Nov 2025 06:31:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-bG4mNQp70rHPk4gMpFE4URh2MaepGhxa4x0zbmsEicI="
+        }
+      ]
+    },
+    {
+      "Route": "images/Product/gheanngo.orndwu8c5h.jpg",
+      "AssetFile": "E:\\Lập trình web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\wwwroot\\images\\Product\\gheanngo.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "35160"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bG4mNQp70rHPk4gMpFE4URh2MaepGhxa4x0zbmsEicI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Nov 2025 06:31:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "orndwu8c5h"
+        },
+        {
+          "Name": "label",
+          "Value": "images/Product/gheanngo.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-bG4mNQp70rHPk4gMpFE4URh2MaepGhxa4x0zbmsEicI="
+        }
+      ]
+    },
+    {
+      "Route": "images/Product/ghebapbenh.7m7ar8nudb.jpg",
+      "AssetFile": "E:\\Lập trình web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\wwwroot\\images\\Product\\ghebapbenh.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "132111"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8a8wXxR+Aqe2l/oDGEgF8Wq79op2APXGzoSTs7K8fZA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Nov 2025 06:40:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7m7ar8nudb"
+        },
+        {
+          "Name": "label",
+          "Value": "images/Product/ghebapbenh.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-8a8wXxR+Aqe2l/oDGEgF8Wq79op2APXGzoSTs7K8fZA="
+        }
+      ]
+    },
+    {
+      "Route": "images/Product/ghebapbenh.jpg",
+      "AssetFile": "E:\\Lập trình web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\wwwroot\\images\\Product\\ghebapbenh.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "132111"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8a8wXxR+Aqe2l/oDGEgF8Wq79op2APXGzoSTs7K8fZA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Nov 2025 06:40:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-8a8wXxR+Aqe2l/oDGEgF8Wq79op2APXGzoSTs7K8fZA="
+        }
+      ]
+    },
+    {
+      "Route": "images/Product/ghedon.jpg",
+      "AssetFile": "E:\\Lập trình web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\wwwroot\\images\\Product\\ghedon.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "93250"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DeYQzfpbP8bASpQJljL0OewpSqZvy9OMPjhWFwp+co4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Nov 2025 06:35:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-DeYQzfpbP8bASpQJljL0OewpSqZvy9OMPjhWFwp+co4="
+        }
+      ]
+    },
+    {
+      "Route": "images/Product/ghedon.rqj8on7rnr.jpg",
+      "AssetFile": "E:\\Lập trình web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\wwwroot\\images\\Product\\ghedon.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "93250"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DeYQzfpbP8bASpQJljL0OewpSqZvy9OMPjhWFwp+co4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Nov 2025 06:35:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "rqj8on7rnr"
+        },
+        {
+          "Name": "label",
+          "Value": "images/Product/ghedon.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-DeYQzfpbP8bASpQJljL0OewpSqZvy9OMPjhWFwp+co4="
+        }
+      ]
+    },
+    {
+      "Route": "images/Product/ghesofadon.hqj8qh34v1.jpg",
+      "AssetFile": "E:\\Lập trình web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\wwwroot\\images\\Product\\ghesofadon.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "341505"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"F3zxSP1fqZCrIfvvJ0DtNv6SOovir79MvnYYuoQBJs4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Nov 2025 06:29:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hqj8qh34v1"
+        },
+        {
+          "Name": "label",
+          "Value": "images/Product/ghesofadon.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-F3zxSP1fqZCrIfvvJ0DtNv6SOovir79MvnYYuoQBJs4="
+        }
+      ]
+    },
+    {
+      "Route": "images/Product/ghesofadon.jpg",
+      "AssetFile": "E:\\Lập trình web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\wwwroot\\images\\Product\\ghesofadon.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "341505"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"F3zxSP1fqZCrIfvvJ0DtNv6SOovir79MvnYYuoQBJs4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Nov 2025 06:29:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-F3zxSP1fqZCrIfvvJ0DtNv6SOovir79MvnYYuoQBJs4="
+        }
+      ]
+    },
+    {
+      "Route": "images/Product/ghethugian.7egcupa88k.jpg",
+      "AssetFile": "E:\\Lập trình web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\wwwroot\\images\\Product\\ghethugian.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "20470"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/1/Ebk+gpr5D6CQgWgAj4wSKe/euyXQS1ePhh+ZdApQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Nov 2025 06:26:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7egcupa88k"
+        },
+        {
+          "Name": "label",
+          "Value": "images/Product/ghethugian.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-/1/Ebk+gpr5D6CQgWgAj4wSKe/euyXQS1ePhh+ZdApQ="
+        }
+      ]
+    },
+    {
+      "Route": "images/Product/ghethugian.jpg",
+      "AssetFile": "E:\\Lập trình web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\wwwroot\\images\\Product\\ghethugian.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "20470"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/1/Ebk+gpr5D6CQgWgAj4wSKe/euyXQS1ePhh+ZdApQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Nov 2025 06:26:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-/1/Ebk+gpr5D6CQgWgAj4wSKe/euyXQS1ePhh+ZdApQ="
+        }
+      ]
+    },
+    {
+      "Route": "images/Product/tudaugiuong.jpg",
+      "AssetFile": "E:\\Lập trình web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\wwwroot\\images\\Product\\tudaugiuong.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "281624"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"p0vCzN6NYuuEH0gacBqQAp9qeJzfiWTVF1gnrcMWXUI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Nov 2025 06:37:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-p0vCzN6NYuuEH0gacBqQAp9qeJzfiWTVF1gnrcMWXUI="
+        }
+      ]
+    },
+    {
+      "Route": "images/Product/tudaugiuong.lhy3zowe18.jpg",
+      "AssetFile": "E:\\Lập trình web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\wwwroot\\images\\Product\\tudaugiuong.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "281624"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"p0vCzN6NYuuEH0gacBqQAp9qeJzfiWTVF1gnrcMWXUI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Nov 2025 06:37:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "lhy3zowe18"
+        },
+        {
+          "Name": "label",
+          "Value": "images/Product/tudaugiuong.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-p0vCzN6NYuuEH0gacBqQAp9qeJzfiWTVF1gnrcMWXUI="
+        }
+      ]
+    },
+    {
+      "Route": "images/Product/tugiay.jpg",
+      "AssetFile": "E:\\Lập trình web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\wwwroot\\images\\Product\\tugiay.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6362"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zab9+sC3iJU87uOaXnWFQNnbuVhtBrs9vpiKZKVQVtM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 12 Nov 2025 07:04:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-zab9+sC3iJU87uOaXnWFQNnbuVhtBrs9vpiKZKVQVtM="
+        }
+      ]
+    },
+    {
+      "Route": "images/Product/tugiay.pxdp8b88bh.jpg",
+      "AssetFile": "E:\\Lập trình web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\wwwroot\\images\\Product\\tugiay.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6362"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zab9+sC3iJU87uOaXnWFQNnbuVhtBrs9vpiKZKVQVtM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 12 Nov 2025 07:04:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "pxdp8b88bh"
+        },
+        {
+          "Name": "label",
+          "Value": "images/Product/tugiay.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-zab9+sC3iJU87uOaXnWFQNnbuVhtBrs9vpiKZKVQVtM="
+        }
+      ]
+    },
+    {
+      "Route": "images/Product/tuquanao.93nofxew30.jpg",
+      "AssetFile": "E:\\Lập trình web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\wwwroot\\images\\Product\\tuquanao.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "270230"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GwLB5iZULwjRId88cWle7UssaiKRCXEEny0vX/j76wU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Nov 2025 06:22:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "93nofxew30"
+        },
+        {
+          "Name": "label",
+          "Value": "images/Product/tuquanao.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-GwLB5iZULwjRId88cWle7UssaiKRCXEEny0vX/j76wU="
+        }
+      ]
+    },
+    {
+      "Route": "images/Product/tuquanao.jpg",
+      "AssetFile": "E:\\Lập trình web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\wwwroot\\images\\Product\\tuquanao.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "270230"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GwLB5iZULwjRId88cWle7UssaiKRCXEEny0vX/j76wU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Nov 2025 06:22:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-GwLB5iZULwjRId88cWle7UssaiKRCXEEny0vX/j76wU="
+        }
+      ]
+    },
+    {
+      "Route": "images/Product/tusach.5pkkgb76vi.jpg",
+      "AssetFile": "E:\\Lập trình web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\wwwroot\\images\\Product\\tusach.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "549791"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ybGT0pwjAH9oLKu/NcW52TTBBP6P1UZEPgGz0pq03a0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Nov 2025 06:30:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5pkkgb76vi"
+        },
+        {
+          "Name": "label",
+          "Value": "images/Product/tusach.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ybGT0pwjAH9oLKu/NcW52TTBBP6P1UZEPgGz0pq03a0="
+        }
+      ]
+    },
+    {
+      "Route": "images/Product/tusach.jpg",
+      "AssetFile": "E:\\Lập trình web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\wwwroot\\images\\Product\\tusach.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "549791"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ybGT0pwjAH9oLKu/NcW52TTBBP6P1UZEPgGz0pq03a0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Nov 2025 06:30:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ybGT0pwjAH9oLKu/NcW52TTBBP6P1UZEPgGz0pq03a0="
+        }
+      ]
+    },
+    {
+      "Route": "images/Product/tutrangtri.jpg",
+      "AssetFile": "E:\\Lập trình web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\wwwroot\\images\\Product\\tutrangtri.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "216667"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QG7t/tO8CW3sm60BjJve5c9JR1HbiMNgsOYxnLPpBVU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Nov 2025 06:32:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-QG7t/tO8CW3sm60BjJve5c9JR1HbiMNgsOYxnLPpBVU="
+        }
+      ]
+    },
+    {
+      "Route": "images/Product/tutrangtri.w8cv6rfx7t.jpg",
+      "AssetFile": "E:\\Lập trình web ASP\\WoodenFuniturestore\\WoodenFurnitureStore-\\WoodenFuniturestore\\wwwroot\\images\\Product\\tutrangtri.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "216667"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QG7t/tO8CW3sm60BjJve5c9JR1HbiMNgsOYxnLPpBVU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Nov 2025 06:32:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "w8cv6rfx7t"
+        },
+        {
+          "Name": "label",
+          "Value": "images/Product/tutrangtri.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-QG7t/tO8CW3sm60BjJve5c9JR1HbiMNgsOYxnLPpBVU="
         }
       ]
     },
